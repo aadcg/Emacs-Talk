@@ -2,7 +2,6 @@
 #+AUTHOR: aadco
 #+STARTUP: latexpreview overview hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
-#+LATEX_HEADER: \usepackage[margin=1.2cm]{geometry}
 
 * Hello! Olá! Здравствуйте!
 So, Emacs...
@@ -15,7 +14,8 @@ Welcome to *MY* Emacs.
 Enjoy this live demo.
 
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
-Please find the slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
+
+Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
 
 * What is GNU Emacs?
 
@@ -167,7 +167,7 @@ It can actually be faster than using the command line!
 
 ACTION: commit current changes! and then revert.
 
-* Ein (Jupyter Notebook) & Terminal
+* Ein (Jupyter Notebook)
 #+begin_theorem
 let \(x\) be smth nice.
 #+end_theorem
