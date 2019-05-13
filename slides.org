@@ -9,14 +9,29 @@
 :results: replace
 :END:
 
-=Welcome to GNU Emacs, one component of the GNU/Linux operating system.=
+*Welcome to GNU Emacs, one component of the GNU/Linux operating system.*
 
-Hello!
-Olá!
-Holla!
-Привет!
-Hallo!
-你好!
+[[file:linus-torvalds-vs-richard-stallman.jpg]]
+
+
+Richard Stallman (RMS):
+- launched the GNU Project in 1983
+- developed GNU Emacs in 1985
+
+Free/libre software - free as in freedom, not as in free beer.
+It fights to liberate software users from
+
+
+Linus Torvalds:
+- developed the kernel (Linux) for the GNU operating system in 1994
+- created git (our beloved version control software)
+
+Open source is a (very fruitful) framework of development.
+It enables better code and faster development.
+
+
+
+Hello! Olá! Здравствуйте!
 
 (full Unicode support? Not bad!)
 
@@ -89,12 +104,15 @@ Wait... You're telling me I can have this power across any text file?
 Oh man...
 
 * Python
+** Basic example
 #+begin_src python :results output
   print('Hello World')
 #+end_src
 
 #+RESULTS:
 : Hello World
+
+** Plottting
 
 #+begin_src python :results file
   import matplotlib.pyplot as plt
