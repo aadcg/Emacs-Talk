@@ -65,7 +65,7 @@ GNU coreutils and M-x woman.
 One programm to rule them all.
 
 ** Example
-Given the following text, let's do smth stuff[fn:1]:
+Given the following text, let's do smth stuff:
 
 aadcg@vestas.com
 amaol@vestas.com
@@ -99,7 +99,7 @@ Wait... You're telling me I can have this power across any text file?
 
 Oh man...
 
-* How to Mindstorm?
+* Mindstorm
 :PROPERTIES:
 :results: replace
 :END:
@@ -113,21 +113,26 @@ Oh man...
   nproc
 #+end_src
 
+show macros
+
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
   echo 'Hello Mindstorm! Got some processors?'
   who
   nproc
 #+end_src
 
-** Dired and files
-[(djk)]
-Imagine that I'm writing this sentence.
-In english. На русском.
-А если я пишу на русском языке?
-
+** Dired mode and files
 [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
 [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
 [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
+
+** Terminal emulator
+There are quite some alternatives to get shell functionality inside Emacs.
+
+Here's a subset of those alternatives:
+
+- [ ] shell-command and async-shell-command
+- [ ] ansi-term (or term)
 
 * Python
 ** Basic example
@@ -139,7 +144,6 @@ In english. На русском.
 : Hello World
 
 ** Plottting
-
 #+begin_src python :results file
   import matplotlib.pyplot as plt
 
@@ -155,14 +159,26 @@ In english. На русском.
 #+RESULTS:
 [[file:./demo.png]]
 
-* Macros
+* Magit
+=Magit is an interface to the version control system Git, implemented as an
+Emacs package.=
 
-* Dired
+It can actually be faster than using the command line!
+
+ACTION: commit current changes! and then revert.
+
 * Ein (Jupyter Notebook) & Terminal
 #+begin_theorem
 let \(x\) be smth nice.
 #+end_theorem
 
-* Footnotes
+* Miscellaneous
 
-[fn:1] Apologies if you're not here. Those are the people I was expecting to attend.
+** Tetris
+
+** Psychotherapist
+M-x doctor
+
+Well, people don't get Emacs... they say it's complicated
+
+** Emacs OS
