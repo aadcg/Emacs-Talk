@@ -4,69 +4,65 @@
 #+OPTIONS: toc:nil num:nil email:nil
 #+LATEX_HEADER: \usepackage[margin=1.2cm]{geometry}
 
-* Why GNU Emacs?
-:PROPERTIES:
-:results: replace
-:END:
+* Hello! Olá! Здравствуйте!
+So, Emacs...
 
-*Welcome to GNU Emacs, one component of the GNU/Linux operating system.*
+Are you a vi(m) user?
+Recall that vi vi vi is the editor of the beast.
+And that violence begins with vi.
+
+Welcome to *MY* Emacs.
+Enjoy this live demo.
+
+Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
+Please find the slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
+
+* What is GNU Emacs?
+
+A [[https://www.gnu.org/software/emacs/][text editor]] that greets you with:
+
+=Welcome to GNU Emacs, one component of the GNU/Linux operating system.=
+
+** What is GNU/Linux?
+
 
 [[file:linus-torvalds-vs-richard-stallman.jpg]]
 
-
-Richard Stallman (RMS):
-- launched the GNU Project in 1983
-- developed GNU Emacs in 1985
-
-Free/libre software - free as in freedom, not as in free beer.
-It fights to liberate software users from
+*** Richard Stallman (here as Saint IGNUcius)
 
 
-Linus Torvalds:
-- developed the kernel (Linux) for the GNU operating system in 1994
-- created git (our beloved version control software)
+[[file:stallman.jpeg]]
 
-Open source is a (very fruitful) framework of development.
-It enables better code and faster development.
+- launched the GNU Project (GNU's not Unix) in 1983;
+- developed GNU Emacs in 1985.
+
+Free software - free as in freedom, not as in free beer.
+
+It gives software users the freedom to use, study, distribute and modify it.
+
+*** Linus Torvalds
 
 
+[[file:linus.jpeg]]
 
-Hello! Olá! Здравствуйте!
+- developed the kernel (Linux) for the GNU operating system in 1994;
+- created git in 2005 (our beloved version control software).
 
-(full Unicode support? Not bad!)
+Open source - a software development model that encourages open collaboration.
 
-[[https://www.gnu.org/software/emacs/][Emacs]]
+It provides better code and faster deployment.
 
-In short, a powerful text editor.
+*** Conclusions
+It's GNU + Linux or GNU/Linux, not just Linux.
 
-Welcome to *MY* Emacs.
-Enjoy the tour!
+Emacs is part of this amazing operating system.
+And you can do pretty much everything without leaving it.
 
-Please find my config files at github.com/aadcg.
 
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/
-  echo 'Hello Mindstorm!'
-  uptime
-  who
-  nproc
-#+end_src
-
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
-  echo 'Hello Mindstorm! Got some processors?'
-  who
-  nproc
-#+end_src
-
-** Dired demo
-sdfjksdkfj
+GNU coreutils and M-x woman.
 
 * Why a text editor?
-- One programm to rule them all;
-
-- IDEs tend to specialize in just one programming language;
-
-- Emacs features debuggers and all the fancy stuff you'd expect from an IDE
-  because of its faithful community.
+One programm to rule them all.
 
 ** Example
 Given the following text, let's do smth stuff[fn:1]:
@@ -103,6 +99,36 @@ Wait... You're telling me I can have this power across any text file?
 
 Oh man...
 
+* How to Mindstorm?
+:PROPERTIES:
+:results: replace
+:END:
+
+=TRAMP is for transparently accessing remote files from within Emacs.=
+
+#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/
+  echo 'Hello Mindstorm!'
+  uptime
+  who
+  nproc
+#+end_src
+
+#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
+  echo 'Hello Mindstorm! Got some processors?'
+  who
+  nproc
+#+end_src
+
+** Dired and files
+[(djk)]
+Imagine that I'm writing this sentence.
+In english. На русском.
+А если я пишу на русском языке?
+
+[[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
+[[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
+[[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
+
 * Python
 ** Basic example
 #+begin_src python :results output
@@ -128,14 +154,6 @@ Oh man...
 
 #+RESULTS:
 [[file:./demo.png]]
-
-* Mindstorm
-
-* Json, yml modes
-[(djk)]
-Imagine that I'm writing this sentence.
-In english. На русском.
-А если я пишу на русском языке?
 
 * Macros
 
