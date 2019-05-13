@@ -1,5 +1,6 @@
 #+TITLE: Living inside Emacs
-#+AUTHOR: aadco
+#+AUTHOR: André Alexandre Gomes
+#+EMAIL: aadco@vestas.com
 #+STARTUP: latexpreview overview hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
 
@@ -8,6 +9,7 @@
 So, Emacs...
 
 Are you a vi(m) user?
+
 Recall that vi vi vi is the editor of the beast.
 And that violence begins with vi.
 
@@ -80,6 +82,7 @@ rebrf@vestas.com
 rijmc@vestas.com
 timdc@vestas.com
 
+** COMMENT
 |----+----------+---------------------|
 |  # | Initials | Obs                 |
 |----+----------+---------------------|
@@ -137,19 +140,21 @@ Here's a subset of those alternatives:
 
 * Python
 ** Basic example
+
+Programmers only write two programs:
+- Hello World
+- Factorial
+
 #+begin_src python :results output
   print('Hello World')
 #+end_src
-
-#+RESULTS:
-: Hello World
 
 ** Plottting
 #+begin_src python :results file
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i**2 for i in range(50)]
+  y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
   path = './demo.png'
@@ -180,6 +185,8 @@ let \(x\) be smth nice.
 ** Psychotherapist
 M-x doctor
 
-Well, people don't get Emacs... they say it's complicated
+Well, people don't get Emacs...
 
 ** Emacs OS
+
+** PDF
