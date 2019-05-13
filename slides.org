@@ -1,9 +1,7 @@
 #+TITLE: Living inside Emacs
-#+AUTHOR: André Alexandre Gomes
-#+EMAIL: aadco@vestas.com
+#+AUTHOR: aadcg
 #+STARTUP: latexpreview overview hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
-
 
 * Hello! Olá! Здравствуйте!
 So, Emacs...
@@ -82,6 +80,19 @@ rebrf@vestas.com
 rijmc@vestas.com
 timdc@vestas.com
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ** COMMENT
 |----+----------+---------------------|
 |  # | Initials | Obs                 |
@@ -110,12 +121,32 @@ Oh man...
 
 =TRAMP is for transparently accessing remote files from within Emacs.=
 
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/
+#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results latex
   echo 'Hello Mindstorm!'
   uptime
   who
   nproc
 #+end_src
+
+#+RESULTS:
+#+begin_export latex
+| Hello    | Mindstorm! |            |       |                  |    |        |      |          |       |       |      |
+| 18:06:46 | up         |        454 | days, | 21:12,           | 18 | users, | load | average: | 1.15, | 1.29, | 1.38 |
+| miabd    | pts/0      | 2019-05-13 | 14:21 | (:pts/6:S.3)     |    |        |      |          |       |       |      |
+| yavhr    | pts/2      | 2019-01-17 | 11:48 | (:1.0)           |    |        |      |          |       |       |      |
+| mcper    | pts/3      | 2019-03-28 | 06:41 | (:2.0)           |    |        |      |          |       |       |      |
+| yavhr    | pts/1      | 2019-02-22 | 09:05 | (:1.0)           |    |        |      |          |       |       |      |
+| yavhr    | pts/4      | 2019-02-26 | 06:50 | (:1.0)           |    |        |      |          |       |       |      |
+| aadco    | pts/5      | 2019-05-13 | 18:01 | (10.228.252.168) |    |        |      |          |       |       |      |
+| miabd    | pts/6      | 2019-05-13 | 14:21 | (10.228.252.9)   |    |        |      |          |       |       |      |
+| miabd    | pts/7      | 2019-05-13 | 14:21 | (:pts/6:S.1)     |    |        |      |          |       |       |      |
+| seved    | pts/14     | 2019-05-02 | 04:09 | (10.0.105.187)   |    |        |      |          |       |       |      |
+| yavhr    | pts/15     | 2019-04-17 | 13:04 | (:1.0)           |    |        |      |          |       |       |      |
+| yavhr    | pts/16     | 2019-04-17 | 14:13 | (:1.0)           |    |        |      |          |       |       |      |
+| miabd    | pts/21     | 2019-05-13 | 14:21 | (:pts/6:S.2)     |    |        |      |          |       |       |      |
+| 4        |            |            |       |                  |    |        |      |          |       |       |      |
+#+end_export
+
 
 show macros
 
@@ -135,8 +166,13 @@ There are quite some alternatives to get shell functionality inside Emacs.
 
 Here's a subset of those alternatives:
 
-- [ ] shell-command and async-shell-command
 - [ ] ansi-term (or term)
+- [X] shell-command and async-shell-command
+
+
+- [ ] I need to do this
+- [ ] and also that
+- [X] and that
 
 * Python
 ** Basic example
@@ -154,7 +190,7 @@ Programmers only write two programs:
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i for i in range(50)]
+  y = [i**2 for i in range(50)]
 
   plt.plot(x, y, 'o')
   path = './demo.png'
@@ -178,6 +214,9 @@ ACTION: commit current changes! and then revert.
 let \(x\) be smth nice.
 #+end_theorem
 
+\(e^{-\pi} = -1\)
+
+
 * Miscellaneous
 
 ** Tetris
@@ -190,3 +229,4 @@ Well, people don't get Emacs...
 ** Emacs OS
 
 ** PDF
+* End
