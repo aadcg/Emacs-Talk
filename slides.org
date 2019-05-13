@@ -130,4 +130,3 @@ let \(x\) be smth nice.
 * Footnotes
 
 [fn:1] Apologies if you're not here. Those are the people I was expecting to attend.
-s
