@@ -2,23 +2,34 @@
 #+AUTHOR: aadcg
 #+STARTUP: latexpreview overview hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
+#+ATTR_HTML: :width 400px
 
-* Hello! Olá! Здравствуйте!
+* Hello!
 So, Emacs...
 
-Are you a vi(m) user?
+[[file:logo.png]]
 
-Recall that vi vi vi is the editor of the beast.
-And that violence begins with vi.
 
-Welcome to *MY* Emacs.
-Enjoy this live demo.
+Welcome to my Emacs.
 
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
 
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
 
+Some of the images were taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] given by Richard Stallman.
+
+#+begin_comment
+- hi
+- my first talk
+- difficult talk given that we don't share a common background (even amongst
+  emacs user)
+- this is not a tutorial, please do not focus on the how, but on the WHAT!
+- Google translator
+#+end_comment
+
 * What is GNU Emacs?
+
+** Let's open it
 
 A [[https://www.gnu.org/software/emacs/][text editor]] that greets you with:
 
@@ -54,6 +65,11 @@ Open source - a software development model that encourages open collaboration.
 It provides better code and faster deployment.
 
 *** Conclusions
+
+[[file:free_vs_open.png]]
+
+[[file:gnu+linux.png]]
+
 It's GNU + Linux or GNU/Linux, not just Linux.
 
 Emacs is part of this amazing operating system.
@@ -93,7 +109,7 @@ timdc@vestas.com
 
 
 
-** COMMENT
+#+begin_comment
 |----+----------+---------------------|
 |  # | Initials | Obs                 |
 |----+----------+---------------------|
@@ -113,7 +129,7 @@ timdc@vestas.com
 Wait... You're telling me I can have this power across any text file?
 
 Oh man...
-
+#+end_comment
 * Mindstorm
 :PROPERTIES:
 :results: replace
@@ -216,17 +232,62 @@ let \(x\) be smth nice.
 
 \(e^{-\pi} = -1\)
 
-
 * Miscellaneous
 
 ** Tetris
 
+M-x tetris
+
 ** Psychotherapist
+
 M-x doctor
 
 Well, people don't get Emacs...
 
+#+begin_comment
+I am the psychotherapist.  Please, describe your problems.  Each time you are
+finished talking, type RET twice.
+
+Well, people don't get Emacs... They say it's complicated
+
+Emacs?  Hah!  I would appreciate it if you would continue.
+
+I simply love Emacs...
+
+Are you sure?
+
+Oh yes!
+#+end_comment
+
+** Holidays and calendar
+
+M-x list-holidays
+M-x calendar
+
 ** Emacs OS
 
+EXWM
+
 ** PDF
-* End
+
+[[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
+
+** Conclusion
+
+Emacs allows you to define the way you do your computing.
+
+The user controls the software.
+
+[[file:enslaved_users.png]]
+
+* Are you a vi(m) user?
+
+Recall that vi vi vi is the editor of the beast.
+
+And that violence begins with vi.
+
+If you're too used to vi(m) keybindings:
+- use EVIL mode
+- use Spacemacs
+
+* Questions & Answers
