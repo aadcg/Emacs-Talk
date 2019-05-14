@@ -238,11 +238,11 @@ let \(x\) be smth nice.
 
 ** Tetris
 
-M-x tetris
+~M-x tetris~
 
 ** Psychotherapist
 
-M-x doctor
+~M-x doctor~
 
 Well, people don't get Emacs...
 
@@ -263,8 +263,8 @@ Oh yes!
 
 ** Holidays and calendar
 
-M-x list-holidays
-M-x calendar
+~M-x list-holidays~
+~M-x calendar~
 
 ** Emacs OS
 
@@ -300,7 +300,7 @@ the solution given those needs.
 =Recall that vi vi vi is the editor of the beast.=
 
 =And that violence begins with vi.=
-
+:dfjdkfdj:
 #+begin_quote
 Recall that vi vi vi is the editor of the beast.
 #+end_quote
