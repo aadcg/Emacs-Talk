@@ -5,6 +5,7 @@
 #+ATTR_HTML: :width 400px
 
 * Hello!
+
 So, Emacs...
 
 [[file:logo.png]]
@@ -37,11 +38,9 @@ A [[https://www.gnu.org/software/emacs/][text editor]] that greets you with:
 
 ** What is GNU/Linux?
 
-
 [[file:linus-torvalds-vs-richard-stallman.jpg]]
 
-*** Richard Stallman (here as Saint IGNUcius)
-
+*** Richard Stallman
 
 [[file:stallman.jpeg]]
 
@@ -79,6 +78,7 @@ And you can do pretty much everything without leaving it.
 GNU coreutils and M-x woman.
 
 * Why a text editor?
+
 One programm to rule them all.
 
 ** Example
@@ -202,11 +202,12 @@ Programmers only write two programs:
 #+end_src
 
 ** Plottting
+
 #+begin_src python :results file
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i**2 for i in range(50)]
+  y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
   path = './demo.png'
