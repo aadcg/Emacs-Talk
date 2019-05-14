@@ -2,12 +2,11 @@
 #+AUTHOR: aadcg
 #+STARTUP: latexpreview overview hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
-#+ATTR_HTML: :width 400px
+
 
 * Hello!
 
 So, Emacs...
-
 [[file:logo.png]]
 
 
@@ -52,7 +51,6 @@ Free software - free as in freedom, not as in free beer.
 It gives software users the freedom to use, study, distribute and modify it.
 
 *** Linus Torvalds
-
 
 [[file:linus.jpeg]]
 
@@ -178,6 +176,7 @@ show macros
 [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
 
 ** Terminal emulator
+
 There are quite some alternatives to get shell functionality inside Emacs.
 
 Here's a subset of those alternatives:
@@ -220,11 +219,13 @@ Programmers only write two programs:
 
 * Magit
 =Magit is an interface to the version control system Git, implemented as an
-Emacs package.=
+Emacs package.= (from [[https://magit.vc/][here]])
 
 It can actually be faster than using the command line!
 
+#+begin_comment
 ACTION: commit current changes! and then revert.
+#+end_comment
 
 * Ein (Jupyter Notebook)
 #+begin_theorem
@@ -281,14 +282,37 @@ The user controls the software.
 
 [[file:enslaved_users.png]]
 
-* Are you a vi(m) user?
+* Getting help
 
+I am here.
+
+Emacs is also the self documenting text editor!
+
+It all comes down to C-h something
+
+#+begin_comment
+There's more than enough recourses out there. I happen to know them quite
+well. I'd be happy to advice any of you by understading your needs and tailor
+the solution given those needs.
+#+end_comment
+
+** Vi(m) users
+=Recall that vi vi vi is the editor of the beast.=
+
+=And that violence begins with vi.=
+
+#+begin_quote
 Recall that vi vi vi is the editor of the beast.
+#+end_quote
 
-And that violence begins with vi.
+All credit to Richard Stallman.
 
 If you're too used to vi(m) keybindings:
 - use EVIL mode
 - use Spacemacs
+
+Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
+
+Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
 
 * Questions & Answers
