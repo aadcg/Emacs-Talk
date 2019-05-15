@@ -7,7 +7,7 @@
 * Hello!
 
 So, Emacs...
-[[file:logo.png]]
+[[file:images/logo.png]]
 
 
 Welcome to my Emacs.
@@ -37,11 +37,11 @@ A [[https://www.gnu.org/software/emacs/][text editor]] that greets you with:
 
 ** What is GNU/Linux?
 
-[[file:linus-torvalds-vs-richard-stallman.jpg]]
+[[file:images/linus-torvalds-vs-richard-stallman.jpg]]
 
 *** Richard Stallman
 
-[[file:stallman.jpeg]]
+[[file:images/stallman.jpeg]]
 
 - launched the GNU Project (GNU's not Unix) in 1983;
 - developed GNU Emacs in 1985.
@@ -52,7 +52,7 @@ It gives software users the freedom to use, study, distribute and modify it.
 
 *** Linus Torvalds
 
-[[file:linus.jpeg]]
+[[file:images/linus.jpeg]]
 
 - developed the kernel (Linux) for the GNU operating system in 1994;
 - created git in 2005 (our beloved version control software).
@@ -63,9 +63,9 @@ It provides better code and faster deployment.
 
 *** Conclusions
 
-[[file:free_vs_open.png]]
+[[file:images/free_vs_open.png]]
 
-[[file:gnu+linux.png]]
+[[file:images/gnu+linux.png]]
 
 It's GNU + Linux or GNU/Linux, not just Linux.
 
@@ -134,6 +134,8 @@ Oh man...
 :END:
 
 =TRAMP is for transparently accessing remote files from within Emacs.=
+
+TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
 
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results latex
   echo 'Hello Mindstorm!'
@@ -209,13 +211,10 @@ Programmers only write two programs:
   y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
-  path = './demo.png'
+  path = './images/demo.png'
   plt.savefig(path)
   return path
 #+end_src
-
-#+RESULTS:
-[[file:./demo.png]]
 
 * Magit
 =Magit is an interface to the version control system Git, implemented as an
@@ -280,7 +279,7 @@ Emacs allows you to define the way you do your computing.
 
 The user controls the software.
 
-[[file:enslaved_users.png]]
+[[file:images/enslaved_users.png]]
 
 * Getting help
 
