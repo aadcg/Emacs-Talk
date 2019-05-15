@@ -1,0 +1,287 @@
+# Created 2019-05-15 Wed 16:57
+#+OPTIONS: toc:nil num:nil email:nil
+#+TITLE: Living inside GNU Emacs
+#+AUTHOR: aadcg
+#+startup: latexpreview contents hideblocks
+#+export_file_name: slides.org
+
+
+* Hello!
+
+[[file:images/logo.png]]
+
+Welcome to my customized instance of GNU Emacs.
+
+* What is GNU Emacs?
+
+Its [[https://www.gnu.org/software/emacs/index.html][website]] says:
+
+(insert a good excuse for this blank space)
+
+** Let's run it!
+
+=Welcome to GNU Emacs, one component of the GNU/Linux operating system.=
+
+The plots thickens... What is GNU?
+
+** GNU/Linux?
+
+[[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
+
+*** Richard Stallman
+
+[[file:images/stallman.jpeg]]
+
+- Launched the GNU Project (GNU's not Unix) in 1983 with the goal of:
+
+  - creating a complete Unix-compatible software system composed entirely of
+    free software.
+
+- developed GNU Emacs in 1985;
+
+- founded the Free Software Foundation.
+
+**** Free Software
+
+Free software - free as in freedom, not as in free beer.
+
+It gives software users the freedom to use, study, distribute and modify it.
+
+*** Linus Torvalds
+
+[[file:images/linus.jpeg]]
+
+- developed a kernel (Linux) for the GNU operating system in 1994;
+
+- created git in 2005.
+
+Open source - a software development model that encourages open collaboration.
+
+It provides better code and faster deployment.
+
+*** Conclusion
+
+[[file:images/free_vs_open.png]]     [[file:images/gnu+linux.png]]
+(Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.)
+
+
+- It's either GNU+Linux or GNU/Linux, not just +Linux+.
+
+- GNU Emacs is part of this amazing operating system.
+
+- You can do pretty much everything without leaving it.
+
+* Why a text editor?
+
+One programm to rule them all.
+
+Free our brain from trivial text manipulation.
+
+** Example
+
+Given the following text, let's do smth stuff:
+
+aadcg@vestas.com
+amaol@vestas.com
+asoad@vestas.com
+calvr@vestas.com
+darfe@vestas.com
+erofi@vestas.com
+gofmi@vestas.com
+miabd@vestas.com
+rebrf@vestas.com
+rijmc@vestas.com
+timdc@vestas.com
+
+* Mindstorm
+=TRAMP is for transparently accessing remote files from within Emacs.=
+
+TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
+
+** Going wherever without ever leaving
+
+*** Example 1
+
+#+begin_src sh
+  echo 'Hello Mindstorm!'
+  uptime
+  nproc
+  who
+#+end_src
+
+*** Example 2
+
+#+begin_src sh
+  echo 'Hello Mindstorm! Got some processors?'
+  who
+  nproc
+#+end_src
+
+** Dired mode and visiting files
+
+- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
+
+- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
+
+- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
+
+** Terminal emulator
+
+There are quite some alternatives to get shell functionality inside Emacs.
+
+Here's a subset of those alternatives:
+
+- [ ] ansi-term (or term)
+- [X] shell-command and async-shell-command
+
+
+- [ ] I need to do this
+- [ ] and also that
+- [X] and that
+
+* Python
+
+** Basic example
+
+Programmers only write two programs:
+- Hello World
+- Factorial
+
+#+begin_src python
+  print('Hello World')
+#+end_src
+
+** Plottting
+#+begin_src python
+  import matplotlib.pyplot as plt
+
+  x = [i for i in range(50)]
+  y = [i for i in range(50)]
+
+  plt.plot(x, y, 'o')
+  path = './demo.png'
+  plt.savefig(path)
+  return path
+#+end_src
+
+#+begin_src sh
+  module load anaconda/2-5.1.0
+  python example.py
+#+end_src
+Hello
+
+** EIN (Emacs IPython Notebook)
+
+(async-shell-command "jupyter notebook --no-browser")
+
+* Magit
+
+=Magit is an interface to the version control system Git, implemented as an
+Emacs package.= (from [[https://magit.vc/][here]])
+
+It can actually be faster than using the command line!
+
+* Miscellaneous
+
+Let's have fun
+
+* Games
+
+(snake)
+
+* Doctor
+
+(doctor)
+
+* Holidays and calendar
+
+(calendar)
+
+* PDF
+
+[[pdfview:~/NextCloud/[Eric_S._Raymond]_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
+
+* Cross platform
+
+=Emacs runs on several operating systems regardless of the machine type. The
+main ones are: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, MacOS, MS Windows and
+Solaris.=
+
+=We include support for some proprietary systems in GNU Emacs in the hope that
+running Emacs on them will give users a taste of freedom and thus lead them to
+free themselves.=
+
+Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].
+
+** Android
+
+Not surprisingly, I run Emacs on my Android phone.
+
+Quite useful since Emacs is my agenda.
+
+(switch-to-buffer "*Org Agenda*")
+
+* Conclusion
+
+GNU Emacs allows you to define the way you do your computing.
+
+The users control the software.
+
+Its devoted community is its backbone.
+
+[[file:images/enslaved_users.png]]
+Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
+
+* Getting help
+
+Please feel free to approach me anytime.
+I will tailor my help to your needs.
+
+Keep in mind that GNU Emacs is also the self documenting text editor!
+
+(info)
+
+** Vi(m) users
+
+=Recall that vi vi vi is the editor of the beast.=
+(joke by Richard Stallman.)
+
+If you're too used to vi(m) keybindings:
+- use EVIL mode
+- use Spacemacs
+
+* What I've shown
+
+- Google translator
+- Web browser (eww)
+- Terminal emulator (ansi-term)
+- Remote files editor (TRAMP)
+- Python IDE (elpy)
+- PDF reader (pdf-tools)
+- Image viewer
+- A bunch of perks (claendar, games, doctor, agenda, etc)
+
+What I didn't show:
+
+- Emacs as a window manager
+
+
+This is just a grain of sand!
+
+** But...
+
+Actually I've shown you a demo of org mode and literate programming.
+
+=Let us change our traditional attitude to the construction of programs. Instead
+of imagining that our main task is to instruct a computer what to do, let us
+concentrate rather on explaining to human beings what we want a computer to do.=
+
+- Donald Knuth
+
+* Questions & Answers
+
+Thank you.
+
+Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
+
+Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
