@@ -248,6 +248,12 @@ Programmers only write two programs:
 #+RESULTS:
 Hello
 
+** EIN (Emacs IPython Notebook)
+
+(async-shell-command "jupyter notebook --no-browser")
+
+Recall that Emacs is basically a Elisp interpreter.
+
 * Magit
 
 =Magit is an interface to the version control system Git, implemented as an
@@ -258,14 +264,6 @@ It can actually be faster than using the command line!
 #+begin_comment
 ACTION: commit current changes! and then revert.
 #+end_comment
-
-* Ein (Jupyter Notebook)
-
-#+begin_theorem
-let \(x\) be smth nice.
-#+end_theorem
-
-\(e^{-\pi} = -1\)
 
 * Miscellaneous
 
@@ -367,9 +365,12 @@ If you're too used to vi(m) keybindings:
 - Python IDE (elpy)
 - PDF reader (pdf-tools)
 - Image viewer
-- Calendar
-- Games
-- Doctor
+- A bunch of perks (claendar, games, doctor, agenda, etc)
+
+What I didn't show:
+
+- Emacs as a window manager
+
 
 This is just a grain of sand!
 
