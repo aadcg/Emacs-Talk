@@ -1,4 +1,4 @@
-#+TITLE: Living inside Emacs
+#+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
 #+STARTUP: latexpreview overview hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
@@ -6,21 +6,13 @@
 
 * Hello!
 
-So, Emacs...
 [[file:images/logo.png]]
 
-
-Welcome to my Emacs.
-
-Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
-
-Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
-
-Some of the images were taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] given by Richard Stallman.
+Welcome to my customized instance of GNU Emacs.
 
 #+begin_comment
 - hi
-- my first talk
+- my setup
 - difficult talk given that we don't share a common background (even amongst
   emacs user)
 - this is not a tutorial, please do not focus on the how, but on the WHAT!
@@ -37,7 +29,7 @@ A [[https://www.gnu.org/software/emacs/][text editor]] that greets you with:
 
 ** What is GNU/Linux?
 
-[[file:images/linus-torvalds-vs-richard-stallman.jpg]]
+[[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
 *** Richard Stallman
 
@@ -64,12 +56,14 @@ It provides better code and faster deployment.
 *** Conclusions
 
 [[file:images/free_vs_open.png]]
+Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
 
 [[file:images/gnu+linux.png]]
+Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
 
 It's GNU + Linux or GNU/Linux, not just Linux.
 
-Emacs is part of this amazing operating system.
+GNU Emacs is part of this amazing operating system.
 And you can do pretty much everything without leaving it.
 
 
@@ -78,6 +72,8 @@ GNU coreutils and M-x woman.
 * Why a text editor?
 
 One programm to rule them all.
+
+Free our brain from trivial text manipulation.
 
 ** Example
 Given the following text, let's do smth stuff:
@@ -273,19 +269,36 @@ EXWM
 
 [[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
 
+** Cross platform
+
+=Emacs runs on several operating systems regardless of the machine type. The
+main ones are: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, MacOS, MS Windows and
+Solaris.=
+
+=We include support for some proprietary systems in GNU Emacs in the hope that
+running Emacs on them will give users a taste of freedom and thus lead them to
+free themselves.=
+
+Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].
+
+*** Android
+
+Not surprisingly, I run Emacs on my Android phone.
+
 ** Conclusion
 
-Emacs allows you to define the way you do your computing.
+GNU Emacs allows you to define the way you do your computing.
 
-The user controls the software.
+The users control the software.
 
 [[file:images/enslaved_users.png]]
+Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
 
 * Getting help
 
 I am here.
 
-Emacs is also the self documenting text editor!
+GNU Emacs is also the self documenting text editor!
 
 It all comes down to C-h something
 
@@ -315,3 +328,7 @@ Please find my config files at [[https://github.com/aadcg/.emacs.d][https://gith
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
 
 * Questions & Answers
+
+Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
+
+Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
