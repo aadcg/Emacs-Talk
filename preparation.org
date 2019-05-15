@@ -173,7 +173,7 @@ TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
 - comma macro
 #+end_comment
 
-*** Exampke 2
+*** Example 2
 
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
   echo 'Hello Mindstorm! Got some processors?'
@@ -222,9 +222,10 @@ Programmers only write two programs:
 ** Plottting
 :PROPERTIES:
 :exports: code
+:tangle: /ssh:aadco@login.mindstorm.vestas.net:~/example.py
 :END:
 
-#+begin_src python :results file :tangle /ssh:aadco@login.mindstorm.vestas.net:~/example.py
+#+begin_src python :results file
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
@@ -322,6 +323,10 @@ Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]]
 
 Not surprisingly, I run Emacs on my Android phone.
 
+Quite useful since Emacs is my agenda.
+
+(switch-to-buffer "*Org Agenda*")
+
 ** Conclusion
 
 GNU Emacs allows you to define the way you do your computing.
@@ -347,22 +352,11 @@ the solution given those needs.
 
 ** Vi(m) users
 =Recall that vi vi vi is the editor of the beast.=
-
-=And that violence begins with vi.=
-:dfjdkfdj:
-#+begin_quote
-Recall that vi vi vi is the editor of the beast.
-#+end_quote
-
-All credit to Richard Stallman.
+(joke by Richard Stallman.)
 
 If you're too used to vi(m) keybindings:
 - use EVIL mode
 - use Spacemacs
-
-Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
-
-Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
 
 * What I've shown
 
@@ -378,6 +372,16 @@ Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://githu
 - Doctor
 
 This is just a grain of sand!
+
+** But...
+
+Actually I've shown you a demo of org mode and literate programming.
+
+=Let us change our traditional attitude to the construction of programs. Instead
+of imagining that our main task is to instruct a computer what to do, let us
+concentrate rather on explaining to human beings what we want a computer to do.=
+
+- Donald Knuth
 
 * Questions & Answers
 
