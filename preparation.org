@@ -156,35 +156,20 @@ TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
 *** Example 1
 
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results raw
-  # echo 'Hello Mindstorm!'
-  # uptime
-  # nproc
+  echo 'Hello Mindstorm!'
+  uptime
+  nproc
   who
 #+end_src
-
-#+RESULTS:
-miabd    pts/0        2019-05-15 09:41 (:pts/6:S.0)
-yavhr    pts/2        2019-01-17 11:48 (:1.0)
-mcper    pts/3        2019-03-28 06:41 (:2.0)
-yavhr    pts/1        2019-02-22 09:05 (:1.0)
-yavhr    pts/4        2019-02-26 06:50 (:1.0)
-nihpe    pts/5        2019-05-15 07:01 (10.66.38.127)
-miabd    pts/6        2019-05-14 12:44 (10.228.252.9)
-miabd    pts/7        2019-05-14 12:44 (:pts/6:S.1)
-aadco    pts/12       2019-05-15 10:11 (10.228.252.168)
-seved    pts/14       2019-05-02 04:09 (10.0.105.187)
-yavhr    pts/15       2019-04-17 13:04 (:1.0)
-yavhr    pts/16       2019-04-17 14:13 (:1.0)
-miabd    pts/21       2019-05-14 12:44 (:pts/6:S.2)
 
 #+begin_comment
 - :results raw
 - C-c C-c
 - rectangle
 - drop duplicates
+- upper case
 - add e-mail
--
-
+- comma macro
 #+end_comment
 
 *** Exampke 2
@@ -195,7 +180,7 @@ miabd    pts/21       2019-05-14 12:44 (:pts/6:S.2)
   nproc
 #+end_src
 
-** Dired mode and files
+** Dired mode and visiting files
 
 - [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
 
