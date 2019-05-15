@@ -2,6 +2,7 @@
 #+AUTHOR: aadcg
 #+STARTUP: latexpreview contents hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
+#+EXPORT_FILE_NAME: slides.org
 
 
 * Hello!
@@ -23,7 +24,7 @@ technicalities of what you'll be seeing
 
 * What is GNU Emacs?
 
-The [[https://www.gnu.org/software/emacs/index.html][website]] says:
+Its [[https://www.gnu.org/software/emacs/index.html][website]] says:
 
 (insert a good excuse for this blank space)
 
@@ -206,7 +207,7 @@ Here's a subset of those alternatives:
 * Python
 :PROPERTIES:
 :results: replace
-:exports: code
+:exports:  code
 :END:
 
 ** Basic example
@@ -218,6 +219,9 @@ Programmers only write two programs:
 #+begin_src python :results output
   print('Hello World')
 #+end_src
+
+#+RESULTS:
+: Hello World
 
 ** Plottting
 :PROPERTIES:
@@ -237,9 +241,6 @@ Programmers only write two programs:
   return path
 #+end_src
 
-#+RESULTS:
-[[file:./demo.png]]
-
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results raw
   module load anaconda/2-5.1.0
   python example.py
@@ -251,8 +252,6 @@ Hello
 ** EIN (Emacs IPython Notebook)
 
 (async-shell-command "jupyter notebook --no-browser")
-
-Recall that Emacs is basically a Elisp interpreter.
 
 * Magit
 
@@ -267,15 +266,15 @@ ACTION: commit current changes! and then revert.
 
 * Miscellaneous
 
-** Tetris
+Let's have fun
 
-~M-x tetris~
+* Games
 
-** Psychotherapist
+(snake)
 
-~M-x doctor~
+* Doctor
 
-Well, people don't get Emacs...
+(doctor)
 
 #+begin_comment
 I am the psychotherapist.  Please, describe your problems.  Each time you are
@@ -292,20 +291,15 @@ Are you sure?
 Oh yes!
 #+end_comment
 
-** Holidays and calendar
+* Holidays and calendar
 
-~M-x list-holidays~
-~M-x calendar~
+(calendar)
 
-** Emacs OS
-
-EXWM
-
-** PDF
+* PDF
 
 [[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
 
-** Cross platform
+* Cross platform
 
 =Emacs runs on several operating systems regardless of the machine type. The
 main ones are: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, MacOS, MS Windows and
@@ -317,7 +311,7 @@ free themselves.=
 
 Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].
 
-*** Android
+** Android
 
 Not surprisingly, I run Emacs on my Android phone.
 
@@ -325,22 +319,25 @@ Quite useful since Emacs is my agenda.
 
 (switch-to-buffer "*Org Agenda*")
 
-** Conclusion
+* Conclusion
 
 GNU Emacs allows you to define the way you do your computing.
 
 The users control the software.
+
+Its devoted community is its backbone.
 
 [[file:images/enslaved_users.png]]
 Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
 
 * Getting help
 
-I am here.
+Please feel free to approach me anytime.
+I will tailor my help to your needs.
 
-GNU Emacs is also the self documenting text editor!
+Keep in mind that GNU Emacs is also the self documenting text editor!
 
-It all comes down to C-h something
+(info)
 
 #+begin_comment
 There's more than enough recourses out there. I happen to know them quite
@@ -349,6 +346,7 @@ the solution given those needs.
 #+end_comment
 
 ** Vi(m) users
+
 =Recall that vi vi vi is the editor of the beast.=
 (joke by Richard Stallman.)
 
