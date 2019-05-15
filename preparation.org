@@ -105,6 +105,7 @@ One programm to rule them all.
 Free our brain from trivial text manipulation.
 
 ** Example
+
 Given the following text, let's do smth stuff:
 
 aadcg@vestas.com
@@ -118,19 +119,6 @@ miabd@vestas.com
 rebrf@vestas.com
 rijmc@vestas.com
 timdc@vestas.com
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #+begin_comment
 |----+----------+---------------------|
@@ -153,6 +141,7 @@ Wait... You're telling me I can have this power across any text file?
 
 Oh man...
 #+end_comment
+
 * Mindstorm
 :PROPERTIES:
 :results: replace
@@ -162,34 +151,43 @@ Oh man...
 
 TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
 
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results latex
-  echo 'Hello Mindstorm!'
-  uptime
+** Going wherever without ever leaving
+
+*** Example 1
+
+#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results raw
+  # echo 'Hello Mindstorm!'
+  # uptime
+  # nproc
   who
-  nproc
 #+end_src
 
 #+RESULTS:
-#+begin_export latex
-| Hello    | Mindstorm! |            |       |                  |    |        |      |          |       |       |      |
-| 18:06:46 | up         |        454 | days, | 21:12,           | 18 | users, | load | average: | 1.15, | 1.29, | 1.38 |
-| miabd    | pts/0      | 2019-05-13 | 14:21 | (:pts/6:S.3)     |    |        |      |          |       |       |      |
-| yavhr    | pts/2      | 2019-01-17 | 11:48 | (:1.0)           |    |        |      |          |       |       |      |
-| mcper    | pts/3      | 2019-03-28 | 06:41 | (:2.0)           |    |        |      |          |       |       |      |
-| yavhr    | pts/1      | 2019-02-22 | 09:05 | (:1.0)           |    |        |      |          |       |       |      |
-| yavhr    | pts/4      | 2019-02-26 | 06:50 | (:1.0)           |    |        |      |          |       |       |      |
-| aadco    | pts/5      | 2019-05-13 | 18:01 | (10.228.252.168) |    |        |      |          |       |       |      |
-| miabd    | pts/6      | 2019-05-13 | 14:21 | (10.228.252.9)   |    |        |      |          |       |       |      |
-| miabd    | pts/7      | 2019-05-13 | 14:21 | (:pts/6:S.1)     |    |        |      |          |       |       |      |
-| seved    | pts/14     | 2019-05-02 | 04:09 | (10.0.105.187)   |    |        |      |          |       |       |      |
-| yavhr    | pts/15     | 2019-04-17 | 13:04 | (:1.0)           |    |        |      |          |       |       |      |
-| yavhr    | pts/16     | 2019-04-17 | 14:13 | (:1.0)           |    |        |      |          |       |       |      |
-| miabd    | pts/21     | 2019-05-13 | 14:21 | (:pts/6:S.2)     |    |        |      |          |       |       |      |
-| 4        |            |            |       |                  |    |        |      |          |       |       |      |
-#+end_export
+miabd    pts/0        2019-05-15 09:41 (:pts/6:S.0)
+yavhr    pts/2        2019-01-17 11:48 (:1.0)
+mcper    pts/3        2019-03-28 06:41 (:2.0)
+yavhr    pts/1        2019-02-22 09:05 (:1.0)
+yavhr    pts/4        2019-02-26 06:50 (:1.0)
+nihpe    pts/5        2019-05-15 07:01 (10.66.38.127)
+miabd    pts/6        2019-05-14 12:44 (10.228.252.9)
+miabd    pts/7        2019-05-14 12:44 (:pts/6:S.1)
+aadco    pts/12       2019-05-15 10:11 (10.228.252.168)
+seved    pts/14       2019-05-02 04:09 (10.0.105.187)
+yavhr    pts/15       2019-04-17 13:04 (:1.0)
+yavhr    pts/16       2019-04-17 14:13 (:1.0)
+miabd    pts/21       2019-05-14 12:44 (:pts/6:S.2)
 
+#+begin_comment
+- :results raw
+- C-c C-c
+- rectangle
+- drop duplicates
+- add e-mail
+-
 
-show macros
+#+end_comment
+
+*** Exampke 2
 
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
   echo 'Hello Mindstorm! Got some processors?'
@@ -198,9 +196,12 @@ show macros
 #+end_src
 
 ** Dired mode and files
-[[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
-[[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
-[[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
+
+- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
+
+- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
+
+- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
 
 ** Terminal emulator
 
@@ -217,6 +218,7 @@ Here's a subset of those alternatives:
 - [X] and that
 
 * Python
+
 ** Basic example
 
 Programmers only write two programs:
@@ -242,6 +244,7 @@ Programmers only write two programs:
 #+end_src
 
 * Magit
+
 =Magit is an interface to the version control system Git, implemented as an
 Emacs package.= (from [[https://magit.vc/][here]])
 
@@ -252,6 +255,7 @@ ACTION: commit current changes! and then revert.
 #+end_comment
 
 * Ein (Jupyter Notebook)
+
 #+begin_theorem
 let \(x\) be smth nice.
 #+end_theorem
@@ -372,6 +376,8 @@ Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://githu
 This is just a grain of sand!
 
 * Questions & Answers
+
+Thank you.
 
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
 
