@@ -145,6 +145,7 @@ Oh man...
 * Mindstorm
 :PROPERTIES:
 :results: replace
+:exports: code
 :END:
 
 =TRAMP is for transparently accessing remote files from within Emacs.=
@@ -203,6 +204,10 @@ Here's a subset of those alternatives:
 - [X] and that
 
 * Python
+:PROPERTIES:
+:results: replace
+:exports: code
+:END:
 
 ** Basic example
 
@@ -215,18 +220,32 @@ Programmers only write two programs:
 #+end_src
 
 ** Plottting
+:PROPERTIES:
+:exports: code
+:END:
 
-#+begin_src python :results file
+#+begin_src python :results file :tangle /ssh:aadco@login.mindstorm.vestas.net:~/example.py
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
   y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
-  path = './images/demo.png'
+  path = './demo.png'
   plt.savefig(path)
   return path
 #+end_src
+
+#+RESULTS:
+[[file:./demo.png]]
+
+#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results raw
+  module load anaconda/2-5.1.0
+  python example.py
+#+end_src
+
+#+RESULTS:
+Hello
 
 * Magit
 
