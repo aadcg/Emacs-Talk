@@ -194,7 +194,6 @@ Here's a subset of those alternatives:
 C-u M-!
 #+end_comment
 
-
 * Python
 :PROPERTIES:
 :results: replace
