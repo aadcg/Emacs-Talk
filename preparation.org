@@ -143,8 +143,6 @@ It provides better code and faster deployment.
 
 =TRAMP is for transparently accessing remote files from within Emacs.=
 
-TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
-
 ** Going everywhere without ever leaving
 
 *** Example 1
@@ -190,11 +188,6 @@ Here's a subset of those alternatives:
 
 - [ ] ansi-term (or term)
 - [X] shell-command and async-shell-command
-
-
-- [ ] I need to do this
-- [ ] and also that
-- [X] and that
 
 * Python
 :PROPERTIES:
@@ -350,27 +343,20 @@ If you're too used to vi(m) keybindings:
 
 [[file:images/vim_emacs.png]]
 
-* What I've shown
+* You've witnessed...
 
-- Google translator
-- Web browser (eww)
-- Terminal emulator (ansi-term)
-- Remote files editor (TRAMP)
-- Python IDE (elpy)
-- PDF reader (pdf-tools)
-- Image viewer
-- A bunch of perks (claendar, games, doctor, agenda, etc)
-
-What I didn't show:
-
-- Emacs as a window manager
-
-
-This is just a grain of sand!
+...a very small fraction of all the capabilities.
 
 ** But...
 
-Actually I've shown you a demo of org mode and literate programming.
+...you've also witnessed the best thing ever without noticing.
+
+This will be best understood by Emacs users.
+
+This presentation was done using org mode and its literate programming
+capabilities.
+
+Org mode is life changing, seriously. But I shall not elaborate on that.
 
 =Let us change our traditional attitude to the construction of programs. Instead
 of imagining that our main task is to instruct a computer what to do, let us
