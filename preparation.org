@@ -1,6 +1,6 @@
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
-#+STARTUP: latexpreview contents hideblocks
+#+STARTUP: latexpreview content hideblocks
 #+OPTIONS: toc:nil num:nil email:nil
 #+EXPORT_FILE_NAME: slides.org
 
@@ -9,24 +9,30 @@
 
 [[file:images/logo.png]]
 
-Welcome to my customized instance of GNU Emacs.
+Welcome to my customized GNU Emacs.
+
+This is a live demo.
+
+Enjoy!
 
 #+begin_comment
-- hi
-- my setup (VM, Ubuntu)
+- hi!
+- my setup (VM, Ubuntu).
 - difficult talk given that we don't share a common background (even amongst
-  emacs user)
+  emacs user).
+- i will try to show smth useful for everyone. but that means that some of you
+will feel quite lost during some moments. bear with me.
 - you will have tons of questions, but please try to abstract from the
-technicalities of what you'll be seeing
+technicalities of what you'll be seeing.
 - this is not a tutorial, please do not focus on the how, but on the WHAT!
-- Google translator?
+- translate word enjoy.
 #+end_comment
 
 * What is GNU Emacs?
 
-Its [[https://www.gnu.org/software/emacs/index.html][website]] says:
+[[https://www.gnu.org/software/emacs/index.html][Website]] says:
 
-(insert a good excuse for this blank space)
+(I have a good excuse for the blank space.)
 
 #+begin_comment
 - open website with eww
@@ -36,17 +42,24 @@ Its [[https://www.gnu.org/software/emacs/index.html][website]] says:
 
 ** Let's run it!
 
+(async-shell-command "emacs -q")
+
 =Welcome to GNU Emacs, one component of the GNU/Linux operating system.=
 
-The plots thickens... What is GNU?
+The plots thickens. What is GNU?
+
+[[file:images/gnu.png]]
 
 ** GNU/Linux?
+
+Can anyone guess what I'm going to say next?
+
+Who are they?
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
 #+begin_comment
-- the above picture sums up everything I will be tetting for the next 5 minutes
-- who can antecipate what I'm going to talk about?
+- the above picture sums up everything I will be telling for the next 5 minutes
 - who are these people? anyone?
 - we need a short historical context
 #+end_comment
@@ -66,7 +79,7 @@ The plots thickens... What is GNU?
 
 **** Free Software
 
-Free software - free as in freedom, not as in free beer.
+*Free as in freedom, not as in free beer.*
 
 It gives software users the freedom to use, study, distribute and modify it.
 
@@ -78,7 +91,9 @@ It gives software users the freedom to use, study, distribute and modify it.
 
 - created git in 2005.
 
-Open source - a software development model that encourages open collaboration.
+**** Open Source
+
+A decentralized software development model that encourages open collaboration.
 
 It provides better code and faster deployment.
 
@@ -94,54 +109,31 @@ It provides better code and faster deployment.
 
 - You can do pretty much everything without leaving it.
 
+(woman "ls")
+
 #+begin_comment
-- M-x woman ls
-- GNU coreutils and RMS
+- woman stands for without manual
 #+end_comment
 
 * Why a text editor?
 
-One programm to rule them all.
+- One programm to rule them all.
 
-Free our brain from trivial text manipulation.
+  Avoid the *nightmare*:
+  |----------------------+----------------------|
+  | I want to work with: | Tool                 |
+  |----------------------+----------------------|
+  | Python               | PyCharm, Spider, etc |
+  | \LaTeX               | TeX maker, Lyx, etc  |
+  | Jupyter Notebook     | Browser              |
+  | R                    | R Studio             |
+  | Java                 | IntelliJ IDEA        |
+  | C++, C#              | Visual Studio        |
+  | Bash                 | Terminal Emulator    |
+  | (...)                |                      |
+  |----------------------+----------------------|
 
-** Example
-
-Given the following text, let's do smth stuff:
-
-aadcg@vestas.com
-amaol@vestas.com
-asoad@vestas.com
-calvr@vestas.com
-darfe@vestas.com
-erofi@vestas.com
-gofmi@vestas.com
-miabd@vestas.com
-rebrf@vestas.com
-rijmc@vestas.com
-timdc@vestas.com
-
-#+begin_comment
-|----+----------+---------------------|
-|  # | Initials | Obs                 |
-|----+----------+---------------------|
-|  1 | AADCG    | great professional! |
-|  2 | AMAOL    | great professional! |
-|  3 | ASOAD    | great professional! |
-|  4 | CALVR    | great professional! |
-|  5 | DARFE    | great professional! |
-|  6 | EROFI    | great professional! |
-|  7 | GOFMI    | great professional! |
-|  8 | MIABD    | great professional! |
-|  9 | REBRF    | great professional! |
-| 10 | RIJMC    | great professional! |
-| 11 | TIMDC    | great professional! |
-|----+----------+---------------------|
-
-Wait... You're telling me I can have this power across any text file?
-
-Oh man...
-#+end_comment
+- Free our brain from trivial text manipulation.
 
 * Mindstorm
 :PROPERTIES:
@@ -153,7 +145,7 @@ Oh man...
 
 TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
 
-** Going wherever without ever leaving
+** Going everywhere without ever leaving
 
 *** Example 1
 
@@ -252,6 +244,8 @@ Hello
 ** EIN (Emacs IPython Notebook)
 
 (async-shell-command "jupyter notebook --no-browser")
+
+the above elisp code \(\iff\) ~$ jupyter notebook --no-browser~
 
 * Magit
 
@@ -353,6 +347,8 @@ the solution given those needs.
 If you're too used to vi(m) keybindings:
 - use EVIL mode
 - use Spacemacs
+
+[[file:images/vim_emacs.png]]
 
 * What I've shown
 
