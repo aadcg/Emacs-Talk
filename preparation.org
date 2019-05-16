@@ -157,8 +157,9 @@ It provides better code and faster deployment.
 #+begin_comment
 - :results raw
 - C-c C-c
-- rectangle
+- C-x r M-w followed by C-x r y
 - drop duplicates
+- sort
 - upper case
 - add e-mail
 - comma macro
@@ -186,8 +187,13 @@ There are quite some alternatives to get shell functionality inside Emacs.
 
 Here's a subset of those alternatives:
 
-- [ ] ansi-term (or term)
-- [X] shell-command and async-shell-command
+- [X] (ansi-term "/bin/bash")
+- [X] (shell-command) and (async-shell-command)
+
+#+begin_comment
+C-u M-!
+#+end_comment
+
 
 * Python
 :PROPERTIES:
@@ -204,9 +210,6 @@ Programmers only write two programs:
 #+begin_src python :results output
   print('Hello World')
 #+end_src
-
-#+RESULTS:
-: Hello World
 
 ** Plottting
 :PROPERTIES:
@@ -231,14 +234,9 @@ Programmers only write two programs:
   python example.py
 #+end_src
 
-#+RESULTS:
-Hello
-
 ** EIN (Emacs IPython Notebook)
 
 (async-shell-command "jupyter notebook --no-browser")
-
-the above elisp code \(\iff\) ~$ jupyter notebook --no-browser~
 
 * Magit
 
@@ -253,11 +251,12 @@ ACTION: commit current changes! and then revert.
 
 * Miscellaneous
 
-Let's have fun
+Let's have fun!
 
 * Games
 
 (snake)
+(tetris)
 
 * Doctor
 
@@ -312,14 +311,14 @@ GNU Emacs allows you to define the way you do your computing.
 
 The users control the software.
 
-Its devoted community is its backbone.
+Its devoted community is what makes it special.
 
 [[file:images/enslaved_users.png]]
 Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
 
 * Getting help
 
-Please feel free to approach me anytime.
+Feel free to approach me anytime.
 I will tailor my help to your needs.
 
 Keep in mind that GNU Emacs is also the self documenting text editor!
@@ -327,9 +326,9 @@ Keep in mind that GNU Emacs is also the self documenting text editor!
 (info)
 
 #+begin_comment
-There's more than enough recourses out there. I happen to know them quite
-well. I'd be happy to advice any of you by understading your needs and tailor
-the solution given those needs.
+- there are lots of recourses out there. I happen to know them quite well.
+- I'd be happy to advice any of you by understading your needs and tailor the
+solution given those needs.
 #+end_comment
 
 ** Vi(m) users
@@ -337,9 +336,11 @@ the solution given those needs.
 =Recall that vi vi vi is the editor of the beast.=
 (joke by Richard Stallman.)
 
-If you're too used to vi(m) keybindings:
-- use EVIL mode
-- use Spacemacs
+If you're used to vi(m) keybindings:
+- try EVIL mode;
+- use Spacemacs.
+
+[[https://www.youtube.com/watch?v=JWD1Fpdd4Pc][Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs]]
 
 [[file:images/vim_emacs.png]]
 
