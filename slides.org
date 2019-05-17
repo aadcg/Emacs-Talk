@@ -1,8 +1,10 @@
-# Created 2019-05-17 Fri 11:34
-#+OPTIONS: toc:nil num:nil email:nil \n:t
+# Created 2019-05-17 Fri 13:47
+#+OPTIONS: toc:nil num:nil email:nil prop:t
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
 #+startup: latexpreview content hideblocks
+#+property: header-args :results raw replace :exports code
+#+property: header-args:py :results output
 #+export_file_name: slides.org
 
 
@@ -102,6 +104,10 @@ Learn how to use a text editor!
 - Free our brain from trivial text manipulation.
 
 * Mindstorm
+:PROPERTIES:
+:exports:  both
+:END:
+
 =TRAMP is for transparently accessing remote files from within Emacs.=
 
 ** Going everywhere without ever leaving
@@ -109,6 +115,9 @@ Learn how to use a text editor!
 I use my local Emacs to edit remote files.
 
 *** Example 1
+:PROPERTIES:
+:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/
+:END:
 
 #+begin_src sh
   echo 'Hello Mindstorm!'
@@ -118,6 +127,9 @@ I use my local Emacs to edit remote files.
 #+end_src
 
 *** Example 2
+:PROPERTIES:
+:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
+:END:
 
 #+begin_src sh
   echo 'Hello Mindstorm! Got processors?'
@@ -147,6 +159,9 @@ There are multiple ways. Here's two:
                 $ some-command &
 
 * Python
+:PROPERTIES:
+:exports:  both
+:END:
 
 ** Basic example
 
@@ -159,6 +174,11 @@ Programmers only write two programs:
 #+end_src
 
 ** Plottting
+:PROPERTIES:
+:header-args:py: :results file
+:tangle:   /ssh:aadco@login.mindstorm.vestas.net:~/example.py
+:END:
+
 #+begin_src python
   import matplotlib.pyplot as plt
 
@@ -170,6 +190,11 @@ Programmers only write two programs:
   plt.savefig(path)
   return path
 #+end_src
+
+*** Mindstorm
+:PROPERTIES:
+:header-args:sh: /ssh:aadco@login.mindstorm.vestas.net:~/
+:END:
 
 #+begin_src sh
   module load anaconda/2-5.1.0
@@ -192,9 +217,13 @@ It can actually be faster than using the command line!
 Let's have fun!
 
 (snake)
+
 (doctor)
+
 (calendar)
+
 жизнь
+
 [[pdfview:~/NextCloud/[Eric_S._Raymond]_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
 
 * Cross platform

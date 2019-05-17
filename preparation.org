@@ -1,7 +1,9 @@
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
 #+STARTUP: latexpreview content hideblocks
-#+OPTIONS: toc:nil num:nil email:nil
+#+OPTIONS: toc:nil num:nil email:nil prop:t
+#+PROPERTY: header-args :results raw replace :exports code
+#+PROPERTY: header-args:py :results output
 #+EXPORT_FILE_NAME: slides.org
 
 
@@ -144,8 +146,7 @@ Learn how to use a text editor!
 
 * Mindstorm
 :PROPERTIES:
-:results: replace
-:exports: code
+:exports: both
 :END:
 
 =TRAMP is for transparently accessing remote files from within Emacs.=
@@ -155,8 +156,11 @@ Learn how to use a text editor!
 I use my local Emacs to edit remote files.
 
 *** Example 1
+:PROPERTIES:
+:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/
+:END:
 
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results raw
+#+begin_src sh
   echo 'Hello Mindstorm!'
   uptime
   nproc
@@ -175,8 +179,11 @@ I use my local Emacs to edit remote files.
 #+end_comment
 
 *** Example 2
+:PROPERTIES:
+:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
+:END:
 
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
+#+begin_src sh
   echo 'Hello Mindstorm! Got processors?'
   who
   nproc
@@ -209,8 +216,7 @@ C-u M-!
 
 * Python
 :PROPERTIES:
-:results: replace
-:exports:  code
+:exports:  both
 :END:
 
 ** Basic example
@@ -219,17 +225,17 @@ Programmers only write two programs:
 - Hello World
 - Factorial
 
-#+begin_src python :results output
+#+begin_src python
   print('Hello World')
 #+end_src
 
 ** Plottting
 :PROPERTIES:
-:exports: code
+:header-args:py: :results file
 :tangle: /ssh:aadco@login.mindstorm.vestas.net:~/example.py
 :END:
 
-#+begin_src python :results file
+#+begin_src python
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
@@ -241,7 +247,12 @@ Programmers only write two programs:
   return path
 #+end_src
 
-#+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net:~/ :results raw
+*** Mindstorm
+:PROPERTIES:
+:header-args:sh: /ssh:aadco@login.mindstorm.vestas.net:~/
+:END:
+
+#+begin_src sh
   module load anaconda/2-5.1.0
   python example.py
 #+end_src
@@ -266,9 +277,13 @@ ACTION: commit current changes! and then revert.
 Let's have fun!
 
 (snake)
+
 (doctor)
+
 (calendar)
+
 жизнь
+
 [[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
 
 #+begin_comment
