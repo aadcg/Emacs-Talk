@@ -1,4 +1,4 @@
-# Created 2019-05-17 Fri 16:10
+# Created 2019-05-17 Fri 16:21
 #+OPTIONS: toc:nil num:nil email:nil prop:t
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
@@ -101,7 +101,7 @@ Perhaps the most basic abilities are reading and writing.
 
 Learn how to use a text editor because:
 
-- One programm to rule them all;
+- One program to rule them all;
 
 - Free our brain from trivial text manipulation.
 
@@ -151,14 +151,17 @@ I use my local Emacs to edit remote files.
 
 There are multiple ways. Here's two:
 
+- [ ] (shell-command "some-command")
+  (async-shell-command "some-command")
+
+  equivalent to:
+
+  $ some-command
+  $ some-command &
+
 - [ ] (ansi-term "/bin/bash")
 
   terminal emulator (like GNOME Terminal, tmux, etc)
-
-- [X] (shell-command) and (async-shell-command)
-
-  equivalent to $ some-command
-                $ some-command &
 
 * Python
 :PROPERTIES:
@@ -192,7 +195,7 @@ Programmers only write two programs:
   plt.plot(x, y, 'o')
   path = './demo.png'
   plt.savefig(path)
-  # return path
+  return path
 #+end_src
 
 *** Mindstorm
@@ -271,7 +274,7 @@ If you're used to vi(m) keybindings:
 
 [[file:images/vim_emacs.png]]
 
-* Did your brain just explod?
+* Did your brain just explode?
 
 Then I did my job well!
 

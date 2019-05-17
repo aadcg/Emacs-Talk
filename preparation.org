@@ -144,7 +144,7 @@ Perhaps the most basic abilities are reading and writing.
 
 Learn how to use a text editor because:
 
-  - One programm to rule them all;
+  - One program to rule them all;
 
   - Free our brain from trivial text manipulation.
 
@@ -205,14 +205,17 @@ I use my local Emacs to edit remote files.
 
 There are multiple ways. Here's two:
 
+- [ ] (shell-command "some-command")
+      (async-shell-command "some-command")
+
+      equivalent to:
+
+      $ some-command
+      $ some-command &
+
 - [ ] (ansi-term "/bin/bash")
 
   terminal emulator (like GNOME Terminal, tmux, etc)
-
-- [X] (shell-command) and (async-shell-command)
-
-  equivalent to $ some-command
-                $ some-command &
 
 #+begin_comment
 C-u M-!
@@ -250,7 +253,7 @@ Programmers only write two programs:
   plt.plot(x, y, 'o')
   path = './demo.png'
   plt.savefig(path)
-  # return path
+  return path
 #+end_src
 
 *** Mindstorm
@@ -347,7 +350,7 @@ Anyway, this is the self documenting text editor!
 (info)
 
 #+begin_comment
-- there are lots of recourses out there. I happen to know them quite well.
+- there are lots of resources out there. I happen to know them quite well.
 
 - I'd be happy to advice any of you by understading your needs and tailor the
 solution given those needs.
@@ -366,7 +369,7 @@ If you're used to vi(m) keybindings:
 
 [[file:images/vim_emacs.png]]
 
-* Did your brain just explod?
+* Did your brain just explode?
 
 Then I did my job well!
 
