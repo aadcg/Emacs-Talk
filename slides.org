@@ -1,4 +1,4 @@
-# Created 2019-05-17 Fri 09:30
+# Created 2019-05-17 Fri 11:33
 #+OPTIONS: toc:nil num:nil email:nil
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
@@ -22,7 +22,7 @@ Enjoy!
 
 (I have a good excuse for the blank space.)
 
-** Let's run it!
+** Let's open it!
 
 (async-shell-command "emacs -q")
 
@@ -34,7 +34,9 @@ The plots thickens. What is GNU?
 
 ** GNU/Linux?
 
-Can anyone guess what I'm going to say next?
+I wish everyone could guess what I'm going to say next.
+
+Sadly, that's not true.
 
 Who are they?
 
@@ -44,7 +46,7 @@ Who are they?
 
 [[file:images/stallman.jpeg]]
 
-- Launched the GNU Project (GNU's not Unix) in 1983 with the goal of:
+- launched the GNU Project (GNU's not Unix) in 1983 with the goal of:
 
   - creating a complete Unix-compatible software system composed entirely of
     free software.
@@ -89,21 +91,13 @@ It provides better code and faster deployment.
 
 * Why a text editor?
 
-- One programm to rule them all.
+Before conquering the world, we should be good at trivial things.
 
-  Avoid the *nightmare*:
-  |----------------------+----------------------|
-  | I want to work with: | Tool                 |
-  |----------------------+----------------------|
-  | Python               | PyCharm, Spider, etc |
-  | \LaTeX               | TeX maker, Lyx, etc  |
-  | Jupyter Notebook     | Browser              |
-  | R                    | R Studio             |
-  | Java                 | IntelliJ IDEA        |
-  | C++, C#              | Visual Studio        |
-  | Bash                 | Terminal Emulator    |
-  | (...)                |                      |
-  |----------------------+----------------------|
+Perhaps the most basic abilities are reading and writing.
+
+Learn how to use a text editor!
+
+- One programm to rule them all;
 
 - Free our brain from trivial text manipulation.
 
@@ -111,6 +105,8 @@ It provides better code and faster deployment.
 =TRAMP is for transparently accessing remote files from within Emacs.=
 
 ** Going everywhere without ever leaving
+
+I use my local Emacs to edit remote files.
 
 *** Example 1
 
@@ -124,27 +120,31 @@ It provides better code and faster deployment.
 *** Example 2
 
 #+begin_src sh
-  echo 'Hello Mindstorm! Got some processors?'
+  echo 'Hello Mindstorm! Got processors?'
   who
   nproc
 #+end_src
 
 ** Dired mode and visiting files
 
-- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
-
 - [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
 
 - [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
 
-** Terminal emulator
+- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
 
-There are quite some alternatives to get shell functionality inside Emacs.
+** Bash commands
 
-Here's a subset of those alternatives:
+There are multiple ways. Here's two:
 
-- [X] (ansi-term "/bin/bash")
+- [ ] (ansi-term "/bin/bash")
+
+  terminal emulator (like GNOME Terminal, tmux, etc)
+
 - [X] (shell-command) and (async-shell-command)
+
+  equivalent to $ some-command
+                $ some-command &
 
 * Python
 
@@ -191,21 +191,10 @@ It can actually be faster than using the command line!
 
 Let's have fun!
 
-* Games
-
 (snake)
-(tetris)
-
-* Doctor
-
 (doctor)
-
-* Holidays and calendar
-
 (calendar)
-
-* PDF
-
+жизнь
 [[pdfview:~/NextCloud/[Eric_S._Raymond]_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
 
 * Cross platform
@@ -217,8 +206,7 @@ Solaris.=
 =We include support for some proprietary systems in GNU Emacs in the hope that
 running Emacs on them will give users a taste of freedom and thus lead them to
 free themselves.=
-
-Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].
+(Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].)
 
 ** Android
 
@@ -261,9 +249,13 @@ If you're used to vi(m) keybindings:
 
 [[file:images/vim_emacs.png]]
 
-* You've witnessed...
+* What just happened...
 
-...a very small fraction of all the capabilities.
+...pretended to be a very humbe account of this BEAST!
+
+I wrote code to make this presentation possible.
+
+I could even give a talk talking about how I prepared of this talk.
 
 ** But...
 
