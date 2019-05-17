@@ -1,4 +1,4 @@
-# Created 2019-05-17 Fri 15:06
+# Created 2019-05-17 Fri 15:19
 #+OPTIONS: toc:nil num:nil email:nil prop:t
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
@@ -56,7 +56,7 @@ Who are they?
 
 - founded the Free Software Foundation.
 
-**** Free Software
+*** Free Software
 
 *Free as in freedom, not as in free beer.*
 
@@ -70,9 +70,9 @@ It gives software users the freedom to use, study, distribute and modify it.
 
 - created git in 2005.
 
-**** Open Source
+*** Open Source
 
-A decentralized software development model that encourages open collaboration.
+A decentralized development model that encourages open collaboration.
 
 It provides better code and faster deployment.
 
@@ -256,6 +256,7 @@ I will tailor my help to your needs.
 
 Anyway, this is the self documenting text editor!
 
+(help)
 (info)
 
 ** Vi(m) users

@@ -93,7 +93,7 @@ Who are they?
 
 - founded the Free Software Foundation.
 
-**** Free Software
+*** Free Software
 
 *Free as in freedom, not as in free beer.*
 
@@ -107,9 +107,9 @@ It gives software users the freedom to use, study, distribute and modify it.
 
 - created git in 2005.
 
-**** Open Source
+*** Open Source
 
-A decentralized software development model that encourages open collaboration.
+A decentralized development model that encourages open collaboration.
 
 It provides better code and faster deployment.
 
@@ -165,68 +165,6 @@ I use my local Emacs to edit remote files.
   nproc
   who
 #+end_src
-
-#+RESULTS:
-Hello Mindstorm!
- 13:31:01 up 458 days, 16:40, 27 users,  load average: 2.46, 2.52, 2.57
-4
-yemuk    pts/0        2019-04-29 13:53 (:5.0)
-yemuk    pts/2        2019-04-20 10:00 (:5.0)
-moakr    pts/4        2019-02-20 07:35 (:2.0)
-moakr    pts/5        2019-02-20 07:36 (:2.0)
-moakr    pts/6        2019-02-20 07:40 (:2.0)
-moakr    pts/7        2019-03-29 11:36 (:2.0)
-moakr    pts/11       2019-04-08 08:40 (:2.0)
-yemuk    pts/9        2019-04-20 10:15 (:5.0)
-yemuk    pts/15       2019-04-30 15:01 (:5.0)
-moakr    pts/16       2019-03-20 13:05 (:2.0)
-yemuk    pts/17       2019-04-20 09:44 (:5.0)
-moakr    pts/19       2019-03-21 11:57 (:2.0)
-aadco    pts/18       2019-05-17 12:29 (10.228.252.168)
-vsa_dev  pts/21       2019-04-30 11:36 (10.0.104.229)
-vsa_prod pts/22       2019-04-30 11:36 (10.0.104.229)
-moakr    pts/23       2019-05-02 09:20 (:2.0)
-moakr    pts/25       2019-03-25 07:17 (:2.0)
-moakr    pts/26       2019-03-26 09:14 (:2.0)
-moakr    pts/27       2019-03-25 07:31 (:2.0)
-moakr    pts/31       2019-03-26 07:46 (:2.0)
-moakr    pts/28       2019-03-25 07:32 (:2.0)
-bemre    pts/24       2019-05-13 12:26 (10.0.105.18)
-moakr    pts/30       2019-03-26 07:42 (:2.0)
-yemuk    pts/32       2019-04-30 15:01 (:5.0)
-jatek    pts/38       2019-05-03 09:32 (10.0.106.141)
-vsa_test pts/29       2019-05-01 12:21 (10.0.104.229)
-aadco    pts/34       2019-05-17 13:10 (10.228.252.168)
-Hello Mindstorm!
- 13:22:52 up 458 days, 16:31, 27 users,  load average: 2.38, 2.57, 2.62
-4
-yemuk    pts/0        2019-04-29 13:53 (:5.0)
-yemuk    pts/2        2019-04-20 10:00 (:5.0)
-moakr    pts/4        2019-02-20 07:35 (:2.0)
-moakr    pts/5        2019-02-20 07:36 (:2.0)
-moakr    pts/6        2019-02-20 07:40 (:2.0)
-moakr    pts/7        2019-03-29 11:36 (:2.0)
-moakr    pts/11       2019-04-08 08:40 (:2.0)
-yemuk    pts/9        2019-04-20 10:15 (:5.0)
-yemuk    pts/15       2019-04-30 15:01 (:5.0)
-moakr    pts/16       2019-03-20 13:05 (:2.0)
-yemuk    pts/17       2019-04-20 09:44 (:5.0)
-moakr    pts/19       2019-03-21 11:57 (:2.0)
-aadco    pts/18       2019-05-17 12:29 (10.228.252.168)
-vsa_dev  pts/21       2019-04-30 11:36 (10.0.104.229)
-vsa_prod pts/22       2019-04-30 11:36 (10.0.104.229)
-moakr    pts/23       2019-05-02 09:20 (:2.0)
-moakr    pts/25       2019-03-25 07:17 (:2.0)
-moakr    pts/26       2019-03-26 09:14 (:2.0)
-moakr    pts/27       2019-03-25 07:31 (:2.0)
-moakr    pts/31       2019-03-26 07:46 (:2.0)
-moakr    pts/28       2019-03-25 07:32 (:2.0)
-bemre    pts/24       2019-05-13 12:26 (10.0.105.18)
-moakr    pts/30       2019-03-26 07:42 (:2.0)
-yemuk    pts/32       2019-04-30 15:01 (:5.0)
-jatek    pts/38       2019-05-03 09:32 (10.0.106.141)
-vsa_test pts/29       2019-05-01 12:21 (10.0.104.229)
-aadco    pts/34       2019-05-17 13:10 (10.228.252.168)
 
 #+begin_comment
 - :results raw
@@ -409,6 +347,7 @@ I will tailor my help to your needs.
 
 Anyway, this is the self documenting text editor!
 
+(help)
 (info)
 
 #+begin_comment
