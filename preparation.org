@@ -291,7 +291,7 @@ Let's have fun!
 
 жизнь
 
-[[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
+[[pdfview:/home/aadco/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15][The Cathedral and the Bazaar - Eric Raymond]]
 
 #+begin_comment
 I am the psychotherapist.  Please, describe your problems.  Each time you are
