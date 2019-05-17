@@ -3,7 +3,6 @@
 #+STARTUP: latexpreview content hideblocks
 #+OPTIONS: toc:nil num:nil email:nil prop:t
 #+PROPERTY: header-args :results raw replace :exports code
-#+PROPERTY: header-args:py :results output
 #+EXPORT_FILE_NAME: slides.org
 
 
@@ -167,6 +166,68 @@ I use my local Emacs to edit remote files.
   who
 #+end_src
 
+#+RESULTS:
+Hello Mindstorm!
+ 13:31:01 up 458 days, 16:40, 27 users,  load average: 2.46, 2.52, 2.57
+4
+yemuk    pts/0        2019-04-29 13:53 (:5.0)
+yemuk    pts/2        2019-04-20 10:00 (:5.0)
+moakr    pts/4        2019-02-20 07:35 (:2.0)
+moakr    pts/5        2019-02-20 07:36 (:2.0)
+moakr    pts/6        2019-02-20 07:40 (:2.0)
+moakr    pts/7        2019-03-29 11:36 (:2.0)
+moakr    pts/11       2019-04-08 08:40 (:2.0)
+yemuk    pts/9        2019-04-20 10:15 (:5.0)
+yemuk    pts/15       2019-04-30 15:01 (:5.0)
+moakr    pts/16       2019-03-20 13:05 (:2.0)
+yemuk    pts/17       2019-04-20 09:44 (:5.0)
+moakr    pts/19       2019-03-21 11:57 (:2.0)
+aadco    pts/18       2019-05-17 12:29 (10.228.252.168)
+vsa_dev  pts/21       2019-04-30 11:36 (10.0.104.229)
+vsa_prod pts/22       2019-04-30 11:36 (10.0.104.229)
+moakr    pts/23       2019-05-02 09:20 (:2.0)
+moakr    pts/25       2019-03-25 07:17 (:2.0)
+moakr    pts/26       2019-03-26 09:14 (:2.0)
+moakr    pts/27       2019-03-25 07:31 (:2.0)
+moakr    pts/31       2019-03-26 07:46 (:2.0)
+moakr    pts/28       2019-03-25 07:32 (:2.0)
+bemre    pts/24       2019-05-13 12:26 (10.0.105.18)
+moakr    pts/30       2019-03-26 07:42 (:2.0)
+yemuk    pts/32       2019-04-30 15:01 (:5.0)
+jatek    pts/38       2019-05-03 09:32 (10.0.106.141)
+vsa_test pts/29       2019-05-01 12:21 (10.0.104.229)
+aadco    pts/34       2019-05-17 13:10 (10.228.252.168)
+Hello Mindstorm!
+ 13:22:52 up 458 days, 16:31, 27 users,  load average: 2.38, 2.57, 2.62
+4
+yemuk    pts/0        2019-04-29 13:53 (:5.0)
+yemuk    pts/2        2019-04-20 10:00 (:5.0)
+moakr    pts/4        2019-02-20 07:35 (:2.0)
+moakr    pts/5        2019-02-20 07:36 (:2.0)
+moakr    pts/6        2019-02-20 07:40 (:2.0)
+moakr    pts/7        2019-03-29 11:36 (:2.0)
+moakr    pts/11       2019-04-08 08:40 (:2.0)
+yemuk    pts/9        2019-04-20 10:15 (:5.0)
+yemuk    pts/15       2019-04-30 15:01 (:5.0)
+moakr    pts/16       2019-03-20 13:05 (:2.0)
+yemuk    pts/17       2019-04-20 09:44 (:5.0)
+moakr    pts/19       2019-03-21 11:57 (:2.0)
+aadco    pts/18       2019-05-17 12:29 (10.228.252.168)
+vsa_dev  pts/21       2019-04-30 11:36 (10.0.104.229)
+vsa_prod pts/22       2019-04-30 11:36 (10.0.104.229)
+moakr    pts/23       2019-05-02 09:20 (:2.0)
+moakr    pts/25       2019-03-25 07:17 (:2.0)
+moakr    pts/26       2019-03-26 09:14 (:2.0)
+moakr    pts/27       2019-03-25 07:31 (:2.0)
+moakr    pts/31       2019-03-26 07:46 (:2.0)
+moakr    pts/28       2019-03-25 07:32 (:2.0)
+bemre    pts/24       2019-05-13 12:26 (10.0.105.18)
+moakr    pts/30       2019-03-26 07:42 (:2.0)
+yemuk    pts/32       2019-04-30 15:01 (:5.0)
+jatek    pts/38       2019-05-03 09:32 (10.0.106.141)
+vsa_test pts/29       2019-05-01 12:21 (10.0.104.229)
+aadco    pts/34       2019-05-17 13:10 (10.228.252.168)
+
 #+begin_comment
 - :results raw
 - C-c C-c
@@ -179,8 +240,8 @@ I use my local Emacs to edit remote files.
 #+end_comment
 
 *** Example 2
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
+:ROPERTIES:
+:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac002:~/
 :END:
 
 #+begin_src sh
@@ -220,6 +281,9 @@ C-u M-!
 :END:
 
 ** Basic example
+:PROPERTIES:
+:header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/example.py
+:END:
 
 Programmers only write two programs:
 - Hello World
@@ -229,10 +293,15 @@ Programmers only write two programs:
   print('Hello World')
 #+end_src
 
+#+RESULTS:
+Hello World
+Hello World
+None
+None
+
 ** Plottting
 :PROPERTIES:
-:header-args:py: :results file
-:tangle: /ssh:aadco@login.mindstorm.vestas.net:~/example.py
+:header-args:python: :results file
 :END:
 
 #+begin_src python
@@ -244,15 +313,19 @@ Programmers only write two programs:
   plt.plot(x, y, 'o')
   path = './demo.png'
   plt.savefig(path)
-  return path
+  # return path
 #+end_src
+
+#+RESULTS:
+[[file:./demo.png]]
 
 *** Mindstorm
 :PROPERTIES:
-:header-args:sh: /ssh:aadco@login.mindstorm.vestas.net:~/
+:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/
 :END:
 
 #+begin_src sh
+  pwd
   module load anaconda/2-5.1.0
   python example.py
 #+end_src
@@ -301,7 +374,15 @@ Are you sure?
 Oh yes!
 #+end_comment
 
-* Cross platform
+** Android
+
+Not surprisingly, I run Emacs on my Android phone.
+
+Quite useful since Emacs is my agenda.
+
+(switch-to-buffer "*Org Agenda*")
+
+* COMMENT Cross platform
 
 =Emacs runs on several operating systems regardless of the machine type. The
 main ones are: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, MacOS, MS Windows and
@@ -312,19 +393,9 @@ running Emacs on them will give users a taste of freedom and thus lead them to
 free themselves.=
 (Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].)
 
-** Android
+* Why Emacs?
 
-Not surprisingly, I run Emacs on my Android phone.
-
-Quite useful since Emacs is my agenda.
-
-(switch-to-buffer "*Org Agenda*")
-
-* Conclusion
-
-GNU Emacs allows you to define the way you do your computing.
-
-The users control the software.
+YOU define the way you do your computing.
 
 Its devoted community is what makes it special.
 
@@ -336,12 +407,13 @@ Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-softwa
 Feel free to approach me anytime.
 I will tailor my help to your needs.
 
-Keep in mind that GNU Emacs is also the self documenting text editor!
+Anyway, this is the self documenting text editor!
 
 (info)
 
 #+begin_comment
 - there are lots of recourses out there. I happen to know them quite well.
+
 - I'd be happy to advice any of you by understading your needs and tailor the
 solution given those needs.
 #+end_comment
@@ -359,30 +431,29 @@ If you're used to vi(m) keybindings:
 
 [[file:images/vim_emacs.png]]
 
-* What just happened...
+* Did your brain just explod?
 
-...pretended to be a very humbe account of this BEAST!
+Then I did my job well!
 
-I wrote code to make this presentation possible.
+I think you're very confused...
 
-I could even give a talk talking about how I prepared of this talk.
+No, I'm not magician! It's way simpler than you think.
 
-** But...
-
-...you've also witnessed the best thing ever without noticing.
-
-This will be best understood by Emacs users.
-
-This presentation was done using org mode and its literate programming
-capabilities.
-
-Org mode is life changing, seriously. But I shall not elaborate on that.
+It's *Org Mode* and its literate programming capabilities.
 
 =Let us change our traditional attitude to the construction of programs. Instead
 of imagining that our main task is to instruct a computer what to do, let us
 concentrate rather on explaining to human beings what we want a computer to do.=
 
 - Donald Knuth
+
+** Sidenote
+
+I wrote code to make this presentation.
+
+I could even give a talk talking about how I prepared of this talk.
+
+And it would still be interesting.
 
 * Questions & Answers
 
