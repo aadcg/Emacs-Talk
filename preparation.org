@@ -16,16 +16,22 @@ This is a live demo.
 Enjoy!
 
 #+begin_comment
-- hi!
-- my setup (VM, Ubuntu).
-- difficult talk given that we don't share a common background (even amongst
-  emacs user).
-- i will try to show smth useful for everyone. but that means that some of you
-will feel quite lost during some moments. bear with me.
-- you will have tons of questions, but please try to abstract from the
-technicalities of what you'll be seeing.
-- this is not a tutorial, please do not focus on the how, but on the WHAT!
-- translate word enjoy.
+- Hi! Thanks.
+
+- Setup - VM, Ubuntu
+
+- Difficult talk given that we're miles away from sharing a common background
+  (even amongst emacs user).
+
+- Please relate to this talk as if you're at the cinema. Please passively acept
+the fact that you don't understand wtf is going on here.
+
+- Some of the things I will show will be more useful that others. I tried to
+take everyone into account.
+
+- You will have tons of questions, let's deal with them in the end.
+
+- Focus on the WHAT, not on the HOW.
 #+end_comment
 
 * What is GNU Emacs?
@@ -35,12 +41,19 @@ technicalities of what you'll be seeing.
 (I have a good excuse for the blank space.)
 
 #+begin_comment
-- open website with eww
-- paste An extensible, customizable, free/libre text editor — and more.
+- A browser is indispensable nowadays. We write code by copying&pasting it from
+stack overflow.
+
+- I can access it without leaving my text editor.
+
+- Open link
+
+- paste a sentence
+
 - Let's assume you have downloaded it and let's run it!
 #+end_comment
 
-** Let's run it!
+** Let's open it!
 
 (async-shell-command "emacs -q")
 
@@ -52,7 +65,9 @@ The plots thickens. What is GNU?
 
 ** GNU/Linux?
 
-Can anyone guess what I'm going to say next?
+I wish everyone could guess what I'm going to say next.
+
+Sadly, that's not true.
 
 Who are they?
 
@@ -68,7 +83,7 @@ Who are they?
 
 [[file:images/stallman.jpeg]]
 
-- Launched the GNU Project (GNU's not Unix) in 1983 with the goal of:
+- launched the GNU Project (GNU's not Unix) in 1983 with the goal of:
 
   - creating a complete Unix-compatible software system composed entirely of
     free software.
@@ -117,21 +132,13 @@ It provides better code and faster deployment.
 
 * Why a text editor?
 
-- One programm to rule them all.
+Before conquering the world, we should be good at trivial things.
 
-  Avoid the *nightmare*:
-  |----------------------+----------------------|
-  | I want to work with: | Tool                 |
-  |----------------------+----------------------|
-  | Python               | PyCharm, Spider, etc |
-  | \LaTeX               | TeX maker, Lyx, etc  |
-  | Jupyter Notebook     | Browser              |
-  | R                    | R Studio             |
-  | Java                 | IntelliJ IDEA        |
-  | C++, C#              | Visual Studio        |
-  | Bash                 | Terminal Emulator    |
-  | (...)                |                      |
-  |----------------------+----------------------|
+Perhaps the most basic abilities are reading and writing.
+
+Learn how to use a text editor!
+
+- One programm to rule them all;
 
 - Free our brain from trivial text manipulation.
 
@@ -144,6 +151,8 @@ It provides better code and faster deployment.
 =TRAMP is for transparently accessing remote files from within Emacs.=
 
 ** Going everywhere without ever leaving
+
+I use my local Emacs to edit remote files.
 
 *** Example 1
 
@@ -168,27 +177,31 @@ It provides better code and faster deployment.
 *** Example 2
 
 #+begin_src sh :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac003:~/
-  echo 'Hello Mindstorm! Got some processors?'
+  echo 'Hello Mindstorm! Got processors?'
   who
   nproc
 #+end_src
 
 ** Dired mode and visiting files
 
-- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
-
 - [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
 
 - [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
 
-** Terminal emulator
+- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
 
-There are quite some alternatives to get shell functionality inside Emacs.
+** Bash commands
 
-Here's a subset of those alternatives:
+There are multiple ways. Here's two:
 
-- [X] (ansi-term "/bin/bash")
+- [ ] (ansi-term "/bin/bash")
+
+  terminal emulator (like GNOME Terminal, tmux, etc)
+
 - [X] (shell-command) and (async-shell-command)
+
+  equivalent to $ some-command
+                $ some-command &
 
 #+begin_comment
 C-u M-!
@@ -252,14 +265,11 @@ ACTION: commit current changes! and then revert.
 
 Let's have fun!
 
-* Games
-
 (snake)
-(tetris)
-
-* Doctor
-
 (doctor)
+(calendar)
+жизнь
+[[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
 
 #+begin_comment
 I am the psychotherapist.  Please, describe your problems.  Each time you are
@@ -276,14 +286,6 @@ Are you sure?
 Oh yes!
 #+end_comment
 
-* Holidays and calendar
-
-(calendar)
-
-* PDF
-
-[[pdfview:~/NextCloud/%5BEric_S._Raymond%5D_The_Cathedral_&_the_Bazaar__Musi(z-lib.org).pdf::15][The Cathedral and the Bazaar - Eric Raymond]]
-
 * Cross platform
 
 =Emacs runs on several operating systems regardless of the machine type. The
@@ -293,8 +295,7 @@ Solaris.=
 =We include support for some proprietary systems in GNU Emacs in the hope that
 running Emacs on them will give users a taste of freedom and thus lead them to
 free themselves.=
-
-Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].
+(Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].)
 
 ** Android
 
@@ -343,9 +344,13 @@ If you're used to vi(m) keybindings:
 
 [[file:images/vim_emacs.png]]
 
-* You've witnessed...
+* What just happened...
 
-...a very small fraction of all the capabilities.
+...pretended to be a very humbe account of this BEAST!
+
+I wrote code to make this presentation possible.
+
+I could even give a talk talking about how I prepared of this talk.
 
 ** But...
 
@@ -371,3 +376,7 @@ Thank you.
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
 
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
+
+#+begin_comment
+(org-org-export-to-org)
+#+end_comment

@@ -1,8 +1,8 @@
-# Created 2019-05-15 Wed 16:57
+# Created 2019-05-17 Fri 09:30
 #+OPTIONS: toc:nil num:nil email:nil
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
-#+startup: latexpreview contents hideblocks
+#+startup: latexpreview content hideblocks
 #+export_file_name: slides.org
 
 
@@ -10,21 +10,33 @@
 
 [[file:images/logo.png]]
 
-Welcome to my customized instance of GNU Emacs.
+Welcome to my customized GNU Emacs.
+
+This is a live demo.
+
+Enjoy!
 
 * What is GNU Emacs?
 
-Its [[https://www.gnu.org/software/emacs/index.html][website]] says:
+[[https://www.gnu.org/software/emacs/index.html][Website]] says:
 
-(insert a good excuse for this blank space)
+(I have a good excuse for the blank space.)
 
 ** Let's run it!
 
+(async-shell-command "emacs -q")
+
 =Welcome to GNU Emacs, one component of the GNU/Linux operating system.=
 
-The plots thickens... What is GNU?
+The plots thickens. What is GNU?
+
+[[file:images/gnu.png]]
 
 ** GNU/Linux?
+
+Can anyone guess what I'm going to say next?
+
+Who are they?
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
@@ -43,7 +55,7 @@ The plots thickens... What is GNU?
 
 **** Free Software
 
-Free software - free as in freedom, not as in free beer.
+*Free as in freedom, not as in free beer.*
 
 It gives software users the freedom to use, study, distribute and modify it.
 
@@ -55,7 +67,9 @@ It gives software users the freedom to use, study, distribute and modify it.
 
 - created git in 2005.
 
-Open source - a software development model that encourages open collaboration.
+**** Open Source
+
+A decentralized software development model that encourages open collaboration.
 
 It provides better code and faster deployment.
 
@@ -71,34 +85,32 @@ It provides better code and faster deployment.
 
 - You can do pretty much everything without leaving it.
 
+(woman "ls")
+
 * Why a text editor?
 
-One programm to rule them all.
+- One programm to rule them all.
 
-Free our brain from trivial text manipulation.
+  Avoid the *nightmare*:
+  |----------------------+----------------------|
+  | I want to work with: | Tool                 |
+  |----------------------+----------------------|
+  | Python               | PyCharm, Spider, etc |
+  | \LaTeX               | TeX maker, Lyx, etc  |
+  | Jupyter Notebook     | Browser              |
+  | R                    | R Studio             |
+  | Java                 | IntelliJ IDEA        |
+  | C++, C#              | Visual Studio        |
+  | Bash                 | Terminal Emulator    |
+  | (...)                |                      |
+  |----------------------+----------------------|
 
-** Example
-
-Given the following text, let's do smth stuff:
-
-aadcg@vestas.com
-amaol@vestas.com
-asoad@vestas.com
-calvr@vestas.com
-darfe@vestas.com
-erofi@vestas.com
-gofmi@vestas.com
-miabd@vestas.com
-rebrf@vestas.com
-rijmc@vestas.com
-timdc@vestas.com
+- Free our brain from trivial text manipulation.
 
 * Mindstorm
 =TRAMP is for transparently accessing remote files from within Emacs.=
 
-TRAMP stands for Transparent Remote (file) Access, Multiple Protocol.
-
-** Going wherever without ever leaving
+** Going everywhere without ever leaving
 
 *** Example 1
 
@@ -131,13 +143,8 @@ There are quite some alternatives to get shell functionality inside Emacs.
 
 Here's a subset of those alternatives:
 
-- [ ] ansi-term (or term)
-- [X] shell-command and async-shell-command
-
-
-- [ ] I need to do this
-- [ ] and also that
-- [X] and that
+- [X] (ansi-term "/bin/bash")
+- [X] (shell-command) and (async-shell-command)
 
 * Python
 
@@ -168,7 +175,6 @@ Programmers only write two programs:
   module load anaconda/2-5.1.0
   python example.py
 #+end_src
-Hello
 
 ** EIN (Emacs IPython Notebook)
 
@@ -183,11 +189,12 @@ It can actually be faster than using the command line!
 
 * Miscellaneous
 
-Let's have fun
+Let's have fun!
 
 * Games
 
 (snake)
+(tetris)
 
 * Doctor
 
@@ -227,14 +234,14 @@ GNU Emacs allows you to define the way you do your computing.
 
 The users control the software.
 
-Its devoted community is its backbone.
+Its devoted community is what makes it special.
 
 [[file:images/enslaved_users.png]]
 Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
 
 * Getting help
 
-Please feel free to approach me anytime.
+Feel free to approach me anytime.
 I will tailor my help to your needs.
 
 Keep in mind that GNU Emacs is also the self documenting text editor!
@@ -246,31 +253,28 @@ Keep in mind that GNU Emacs is also the self documenting text editor!
 =Recall that vi vi vi is the editor of the beast.=
 (joke by Richard Stallman.)
 
-If you're too used to vi(m) keybindings:
-- use EVIL mode
-- use Spacemacs
+If you're used to vi(m) keybindings:
+- try EVIL mode;
+- use Spacemacs.
 
-* What I've shown
+[[https://www.youtube.com/watch?v=JWD1Fpdd4Pc][Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs]]
 
-- Google translator
-- Web browser (eww)
-- Terminal emulator (ansi-term)
-- Remote files editor (TRAMP)
-- Python IDE (elpy)
-- PDF reader (pdf-tools)
-- Image viewer
-- A bunch of perks (claendar, games, doctor, agenda, etc)
+[[file:images/vim_emacs.png]]
 
-What I didn't show:
+* You've witnessed...
 
-- Emacs as a window manager
-
-
-This is just a grain of sand!
+...a very small fraction of all the capabilities.
 
 ** But...
 
-Actually I've shown you a demo of org mode and literate programming.
+...you've also witnessed the best thing ever without noticing.
+
+This will be best understood by Emacs users.
+
+This presentation was done using org mode and its literate programming
+capabilities.
+
+Org mode is life changing, seriously. But I shall not elaborate on that.
 
 =Let us change our traditional attitude to the construction of programs. Instead
 of imagining that our main task is to instruct a computer what to do, let us
