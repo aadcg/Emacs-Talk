@@ -76,7 +76,9 @@ Who are they?
 
 #+begin_comment
 - the above picture sums up everything I will be telling for the next 5 minutes
+
 - who are these people? anyone?
+
 - we need a short historical context
 #+end_comment
 
@@ -123,7 +125,7 @@ It provides better code and faster deployment.
 
 - GNU Emacs is part of this amazing operating system.
 
-- You can do pretty much everything without leaving it.
+- You can do everything without leaving it.
 
 (woman "ls")
 
@@ -132,16 +134,19 @@ It provides better code and faster deployment.
 #+end_comment
 
 * Why a text editor?
+:PROPERTIES:
+:header-args:python: :results output replace
+:END:
 
 Before conquering the world, we should be good at trivial things.
 
 Perhaps the most basic abilities are reading and writing.
 
-Learn how to use a text editor!
+Learn how to use a text editor because:
 
-- One programm to rule them all;
+  - One programm to rule them all;
 
-- Free our brain from trivial text manipulation.
+  - Free our brain from trivial text manipulation.
 
 * Mindstorm
 :PROPERTIES:
@@ -178,7 +183,7 @@ I use my local Emacs to edit remote files.
 #+end_comment
 
 *** Example 2
-:ROPERTIES:
+:PROPERTIES:
 :header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac002:~/
 :END:
 
@@ -231,12 +236,6 @@ Programmers only write two programs:
   print('Hello World')
 #+end_src
 
-#+RESULTS:
-Hello World
-Hello World
-None
-None
-
 ** Plottting
 :PROPERTIES:
 :header-args:python: :results file
@@ -253,9 +252,6 @@ None
   plt.savefig(path)
   # return path
 #+end_src
-
-#+RESULTS:
-[[file:./demo.png]]
 
 *** Mindstorm
 :PROPERTIES:

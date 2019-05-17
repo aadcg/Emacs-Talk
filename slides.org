@@ -1,4 +1,4 @@
-# Created 2019-05-17 Fri 15:19
+# Created 2019-05-17 Fri 16:04
 #+OPTIONS: toc:nil num:nil email:nil prop:t
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
@@ -86,17 +86,20 @@ It provides better code and faster deployment.
 
 - GNU Emacs is part of this amazing operating system.
 
-- You can do pretty much everything without leaving it.
+- You can do everything without leaving it.
 
 (woman "ls")
 
 * Why a text editor?
+:PROPERTIES:
+:header-args:python: :results output replace
+:END:
 
 Before conquering the world, we should be good at trivial things.
 
 Perhaps the most basic abilities are reading and writing.
 
-Learn how to use a text editor!
+Learn how to use a text editor because:
 
 - One programm to rule them all;
 
@@ -126,7 +129,7 @@ I use my local Emacs to edit remote files.
 #+end_src
 
 *** Example 2
-:ROPERTIES:
+:PROPERTIES:
 :header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac002:~/
 :END:
 
@@ -174,10 +177,6 @@ Programmers only write two programs:
 #+begin_src python
   print('Hello World')
 #+end_src
-Hello World
-Hello World
-None
-None
 
 ** Plottting
 :PROPERTIES:
