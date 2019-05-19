@@ -99,7 +99,12 @@ Who are they?
 
 *Free as in freedom, not as in free beer.*
 
-It gives software users the freedom to use, study, distribute and modify it.
+It gives software users the freedom to:
+
+- use
+- study
+- distribute
+- modify
 
 *** Linus Torvalds
 
