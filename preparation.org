@@ -10,11 +10,9 @@
 
 [[file:images/logo.png]]
 
-Welcome to my customized GNU Emacs.
+Welcome to my customized *GNU Emacs*.
 
-This is a live demo.
-
-Enjoy!
+This is a live demo. Enjoy!
 
 #+begin_comment
 - Hi! Thanks.
@@ -60,7 +58,7 @@ stack overflow.
 
 =Welcome to GNU Emacs, one component of the GNU/Linux operating system.=
 
-The plots thickens. What is GNU?
+The plots thickens. What is *GNU*?
 
 [[file:images/gnu.png]]
 
@@ -68,9 +66,7 @@ The plots thickens. What is GNU?
 
 I wish everyone could guess what I'm going to say next.
 
-Sadly, that's not true.
-
-Who are they?
+Sadly, that might not be true.
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
@@ -86,33 +82,30 @@ Who are they?
 
 [[file:images/stallman.jpeg]]
 
-- launched the GNU Project (GNU's not Unix) in 1983 with the goal of:
+- launched the *GNU Project* (GNU's not Unix) in 1983;
 
-  - creating a complete Unix-compatible software system composed entirely of
-    free software.
+- developed *GNU Emacs* in 1985;
 
-- developed GNU Emacs in 1985;
-
-- founded the Free Software Foundation.
+- founded the *Free Software Foundation*.
 
 *** Free Software
 
-*Free as in freedom, not as in free beer.*
+Free as in *freedom*, not as in free beer.
 
 It gives software users the freedom to:
 
-- use
-- study
-- distribute
-- modify
+  1) use
+  2) study
+  3) distribute
+  4) modify
 
 *** Linus Torvalds
 
 [[file:images/linus.jpeg]]
 
-- developed a kernel (Linux) for the GNU operating system in 1994;
+- developed a kernel (*Linux*) for the GNU operating system in 1994;
 
-- created git in 2005.
+- created *git* in 2005.
 
 *** Open Source
 
@@ -123,12 +116,12 @@ It provides better code and faster deployment.
 *** Conclusion
 
 [[file:images/free_vs_open.png]]     [[file:images/gnu+linux.png]]
-(Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.)
+/Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
 
-- It's either GNU+Linux or GNU/Linux, not just +Linux+.
+- It's either *GNU/Linux* or GNU+Linux, not +Linux+;
 
-- GNU Emacs is part of this amazing operating system.
+- GNU Emacs is part of GNU;
 
 - You can do everything without leaving it.
 
@@ -143,15 +136,9 @@ It provides better code and faster deployment.
 :header-args:python: :results output replace
 :END:
 
-Before conquering the world, we should be good at trivial things.
+- One program to rule them all;
 
-Perhaps the most basic abilities are reading and writing.
-
-Learn how to use a text editor because:
-
-  - One program to rule them all;
-
-  - Free our brain from trivial text manipulation.
+- Free our brain from trivial text handling.
 
 * Mindstorm
 :PROPERTIES:
@@ -211,12 +198,12 @@ I use my local Emacs to edit remote files.
 There are multiple ways. Here's two:
 
 - [ ] (shell-command "some-command")
-      (async-shell-command "some-command")
+       (async-shell-command "some-command")
 
-      equivalent to:
+       equivalent to:
 
-      $ some-command
-      $ some-command &
+       $ some-command
+       $ some-command &
 
 - [ ] (ansi-term "/bin/bash")
 
@@ -342,7 +329,7 @@ YOU define the way you do your computing.
 Its devoted community is what makes it special.
 
 [[file:images/enslaved_users.png]]
-Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman.
+/Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
 * Getting help
 
@@ -378,16 +365,14 @@ If you're used to vi(m) keybindings:
 
 Then I did my job well!
 
-I think you're very confused...
-
 No, I'm not magician! It's way simpler than you think.
 
-It's *Org Mode* and its literate programming capabilities.
+It's *Org Mode* and its *literate programming* capabilities.
 
-=Let us change our traditional attitude to the construction of programs. Instead
+
+Let us change our traditional attitude to the construction of programs. Instead
 of imagining that our main task is to instruct a computer what to do, let us
-concentrate rather on explaining to human beings what we want a computer to do.=
-
+concentrate rather on explaining to human beings what we want a computer to do.
 - Donald Knuth
 
 ** Sidenote
