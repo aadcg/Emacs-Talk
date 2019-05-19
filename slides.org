@@ -1,4 +1,4 @@
-# Created 2019-05-19 Sun 22:20
+# Created 2019-05-19 Sun 22:50
 #+OPTIONS: toc:nil num:nil email:nil prop:t
 #+TITLE: Living inside GNU Emacs
 #+AUTHOR: aadcg
@@ -224,7 +224,8 @@ Let's have fun!
 
 жизнь
 
-[[pdfview:/home/aadco/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15][The Cathedral and the Bazaar - Eric Raymond]]
+[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15
+][The Cathedral and the Bazaar - Eric Raymond]]
 
 ** Android
 
