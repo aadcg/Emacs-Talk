@@ -147,12 +147,12 @@ I use my local Emacs to edit remote files.
 There are multiple ways. Here's two:
 
 - [ ] (shell-command "some-command")
-      (async-shell-command "some-command")
+       (async-shell-command "some-command")
 
-      equivalent to:
+       equivalent to:
 
-      $ some-command
-      $ some-command &
+       $ some-command
+       $ some-command &
 
 - [ ] (ansi-term "/bin/bash")
 
@@ -169,8 +169,8 @@ There are multiple ways. Here's two:
 :END:
 
 Programmers only write two programs:
-- Hello World;
-- Factorials.
+- Hello World
+- Factorials
 
 #+begin_src python
   print('Hello World')
