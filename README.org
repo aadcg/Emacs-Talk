@@ -1,1 +1,3 @@
-Preparing an Emacs presentation at Vestas Porto Design Center.
+Yet another talk on GNU Emacs.
+
+May 20 @ Vestas Porto Design Center
