@@ -99,6 +99,8 @@ It gives software users the freedom to:
   3) distribute
   4) modify
 
+This doesn't mean that it is anti-commercial!
+
 *** Linus Torvalds
 
 [[file:images/linus.jpeg]]
@@ -119,9 +121,9 @@ It provides better code and faster deployment.
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
 
-- It's either *GNU/Linux* or GNU+Linux, not +Linux+;
+- It's either *GNU/Linux* or *GNU+Linux*, not +Linux+;
 
-- GNU Emacs is part of GNU;
+- *GNU Emacs* is part of GNU;
 
 - You can do everything without leaving it.
 
@@ -158,7 +160,7 @@ I use my local Emacs to edit remote files.
 
 #+begin_src sh
   echo 'Hello Mindstorm!'
-  uptime
+  date
   nproc
   who
 #+end_src
@@ -181,6 +183,7 @@ I use my local Emacs to edit remote files.
 
 #+begin_src sh
   echo 'Hello Mindstorm! Got processors?'
+  date
   who
   nproc
 #+end_src
@@ -220,12 +223,12 @@ C-u M-!
 
 ** Basic example
 :PROPERTIES:
-:header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/example.py
+:header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/demo/hello.py
 :END:
 
 Programmers only write two programs:
-- Hello World
-- Factorial
+  - Hello World;
+  - Factorials.
 
 #+begin_src python
   print('Hello World')
@@ -256,7 +259,7 @@ Programmers only write two programs:
 #+begin_src sh
   pwd
   module load anaconda/2-5.1.0
-  python example.py
+  python hello.py
 #+end_src
 
 ** EIN (Emacs IPython Notebook)
@@ -334,6 +337,7 @@ Its devoted community is what makes it special.
 * Getting help
 
 Feel free to approach me anytime.
+
 I will tailor my help to your needs.
 
 Anyway, this is the self documenting text editor!
@@ -355,7 +359,7 @@ solution given those needs.
 
 If you're used to vi(m) keybindings:
 - try EVIL mode;
-- use Spacemacs.
+- try Spacemacs.
 
 [[https://www.youtube.com/watch?v=JWD1Fpdd4Pc][Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs]]
 
@@ -375,7 +379,7 @@ of imagining that our main task is to instruct a computer what to do, let us
 concentrate rather on explaining to human beings what we want a computer to do.
 - Donald Knuth
 
-** Sidenote
+** COMMENT Sidenote
 
 I wrote code to make this presentation.
 
