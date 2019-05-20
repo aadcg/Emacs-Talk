@@ -289,7 +289,7 @@ Let's have fun!
 
 жизнь
 
-[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15%0A][The Cathedral and the Bazaar - Eric Raymond]]
+[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15][The Cathedral and the Bazaar - Eric Raymond]]
 
 #+begin_comment
 I am the psychotherapist.  Please, describe your problems.  Each time you are
