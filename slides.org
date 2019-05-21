@@ -122,16 +122,6 @@ I use my local Emacs to edit remote files.
   who
 #+end_src
 
-#+RESULTS:
-Hello Mindstorm!
-Mon May 20 10:35:12 UTC 2019
-4
-Dear guys,
-Please get out of here now!
-
-misgd@vestas.com, jolrd@vestas.com, sargg@vestas.com, jupmu@vestas.com,
-mabna@vestas.com, luill@vestas.com, aadco@vestas.com, sekha@vestas.com
-
 *** Example 2
 :PROPERTIES:
 :header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac002:~/
@@ -143,13 +133,6 @@ mabna@vestas.com, luill@vestas.com, aadco@vestas.com, sekha@vestas.com
   who
   nproc
 #+end_src
-
-#+RESULTS:
-Hello Mindstorm! Got processors?
-Mon May 20 10:37:27 UTC 2019
-(unknown) :0           2017-09-26 05:56 (:0)
-aadco    pts/0        2019-05-20 10:37 (fr011.i.mindstorm)
-24
 
 ** Dired mode and visiting files
 
@@ -167,7 +150,7 @@ There are multiple ways. Here's two:
 
   terminal emulator (like GNOME Terminal, tmux, etc)
 
-- [X] (shell-command "some-command")
+- [ ] (shell-command "some-command")
        (async-shell-command "some-command")
 
        equivalent to:
@@ -206,7 +189,7 @@ Hello World
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i**2 for i in range(50)]
+  y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
   path = './demo.png'
@@ -217,7 +200,7 @@ Hello World
 #+RESULTS:
 [[file:./demo.png]]
 
-*** Mindstorm
+** Mindstorm
 :PROPERTIES:
 :header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/demo/
 :END:
@@ -227,10 +210,6 @@ Hello World
   module load anaconda/2-5.1.0
   python hello.py
 #+end_src
-
-#+RESULTS:
-/ifs/home/aadco/demo
-Hello World
 
 ** EIN (Emacs IPython Notebook)
 
