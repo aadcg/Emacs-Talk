@@ -177,9 +177,6 @@ Programmers only write two programs:
   print('Hello World')
 #+end_src
 
-#+RESULTS:
-Hello World
-
 ** Plottting
 :PROPERTIES:
 :header-args:python: :results file
@@ -196,9 +193,6 @@ Hello World
   plt.savefig(path)
   return path
 #+end_src
-
-#+RESULTS:
-[[file:./demo.png]]
 
 ** Mindstorm
 :PROPERTIES:
