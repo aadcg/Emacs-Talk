@@ -1,4 +1,4 @@
-#+TITLE: Living inside GNU Emacs
+#+TITLE: GNU Emacs and Freedom
 #+STARTUP: latexpreview showall
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+PROPERTY: header-args :results raw replace :exports code
@@ -16,9 +16,9 @@ TODO
 
 [[file:images/logo.png]]
 
-Welcome to my customized *GNU Emacs*.
+Welcome to (my customized) *GNU Emacs*.
 
-This is a live demo. Enjoy!
+Enjoy!
 
 #+begin_comment
 - Hi! Thanks.
@@ -39,7 +39,7 @@ take everyone into account.
 - Focus on the WHAT, not on the HOW.
 #+end_comment
 
-* What is GNU Emacs?
+* What is it?
 
 [[https://www.gnu.org/software/emacs/index.html][Website]] says:
 
@@ -58,7 +58,7 @@ stack overflow.
 - Let's assume you have downloaded it and let's run it!
 #+end_comment
 
-** Let's open it!
+* Let's run it!
 
 (async-shell-command "emacs -q")
 
@@ -68,7 +68,7 @@ The plots thickens. What is *GNU*?
 
 [[file:images/gnu.png]]
 
-** GNU/Linux?
+* GNU/Linux?
 
 I wish everyone could guess what I'm going to say next.
 
@@ -84,7 +84,7 @@ Sadly, that might not be true.
 - we need a short historical context
 #+end_comment
 
-*** Richard Stallman
+* Richard Stallman
 
 [[file:images/stallman.jpeg]]
 
@@ -94,7 +94,7 @@ Sadly, that might not be true.
 
 - founded the *Free Software Foundation*.
 
-*** Free Software
+* Free Software
 
 Free as in *freedom*, not as in free beer.
 
@@ -107,7 +107,7 @@ It gives software users the freedom to:
 
 This doesn't mean that it is anti-commercial!
 
-*** Linus Torvalds
+* Linus Torvalds
 
 [[file:images/linus.jpeg]]
 
@@ -115,13 +115,13 @@ This doesn't mean that it is anti-commercial!
 
 - created *git* in 2005.
 
-*** Open Source
+* Open Source
 
 A decentralized development model that encourages open collaboration.
 
 It provides better code and faster deployment.
 
-*** Conclusion
+* Conclusion
 
 [[file:images/free_vs_open.png]]     [[file:images/gnu+linux.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
@@ -140,61 +140,32 @@ It provides better code and faster deployment.
 #+end_comment
 
 * Why a text editor?
-:PROPERTIES:
-:header-args:python: :results output replace
-:END:
 
 - One program to rule them all;
 
 - Free our brain from trivial text handling.
 
-* Mindstorm
-:PROPERTIES:
-:exports: both
-:END:
+Ex:
 
-=TRAMP is for transparently accessing remote files from within Emacs.=
+(macros w counter)
+(rectangles)
+(sort)
+(upper case)
+(comma macro)
 
-** Going everywhere without ever leaving
+Person1 name1@somewhere.com
+Person2 name2@somewhere.com
+Person3 name1@somewhere.com
+Person4 name2@somewhere.com
+Person5 name1@somewhere.com
 
-I use my local Emacs to edit remote files.
+name1@here.com
+name2@here.com
+name1@here.com
+name2@here.com
+name1@here.com
 
-*** Example 1
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/
-:END:
-
-#+begin_src sh
-  echo 'Hello Mindstorm!'
-  date
-  nproc
-  who
-#+end_src
-
-#+begin_comment
-- :results raw
-- C-c C-c
-- C-x r M-w followed by C-x r y
-- drop duplicates
-- sort
-- upper case
-- add e-mail
-- comma macro
-#+end_comment
-
-*** Example 2
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac002:~/
-:END:
-
-#+begin_src sh
-  echo 'Hello Mindstorm! Got processors?'
-  date
-  who
-  nproc
-#+end_src
-
-** Dired mode and visiting files
+* Dired mode and visiting files
 
 - [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
 
@@ -202,7 +173,7 @@ I use my local Emacs to edit remote files.
 
 - [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
 
-** Bash commands
+* Bash commands
 
 There are multiple ways. Here's two:
 
@@ -222,12 +193,7 @@ There are multiple ways. Here's two:
 C-u M-!
 #+end_comment
 
-* Python
-:PROPERTIES:
-:exports:  both
-:END:
-
-** Basic example
+* Basic example
 :PROPERTIES:
 :header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/demo/hello.py
 :END:
@@ -240,7 +206,7 @@ Programmers only write two programs:
   print('Hello World')
 #+end_src
 
-** Plottting
+* Plottting
 :PROPERTIES:
 :header-args:python: :results file
 :END:
@@ -256,21 +222,6 @@ Programmers only write two programs:
   plt.savefig(path)
   return path
 #+end_src
-
-*** Mindstorm
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/
-:END:
-
-#+begin_src sh
-  pwd
-  module load anaconda/2-5.1.0
-  python hello.py
-#+end_src
-
-** EIN (Emacs IPython Notebook)
-
-(async-shell-command "jupyter notebook --no-browser")
 
 * Magit
 
@@ -312,13 +263,15 @@ Are you sure?
 Oh yes!
 #+end_comment
 
-** Android
+* Android
 
 Not surprisingly, I run Emacs on my Android phone.
 
 Quite useful since Emacs is my agenda.
 
 (switch-to-buffer "*Org Agenda*")
+
+Screen-stream demo!
 
 * COMMENT Cross platform
 
@@ -358,19 +311,6 @@ Anyway, this is the self documenting text editor!
 solution given those needs.
 #+end_comment
 
-** Vi(m) users
-
-=Recall that vi vi vi is the editor of the beast.=
-(joke by Richard Stallman.)
-
-If you're used to vi(m) keybindings:
-- try EVIL mode;
-- try Spacemacs.
-
-[[https://www.youtube.com/watch?v=JWD1Fpdd4Pc][Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs]]
-
-[[file:images/vim_emacs.png]]
-
 * Did your brain just explode?
 
 Then I did my job well!
@@ -385,14 +325,6 @@ of imagining that our main task is to instruct a computer what to do, let us
 concentrate rather on explaining to human beings what we want a computer to do.
 - Donald Knuth
 
-** COMMENT Sidenote
-
-I wrote code to make this presentation.
-
-I could even give a talk talking about how I prepared of this talk.
-
-And it would still be interesting.
-
 * Questions & Answers
 
 Thank you.
@@ -400,7 +332,3 @@ Thank you.
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
 
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
-
-#+begin_comment
-(org-org-export-to-org)
-#+end_comment

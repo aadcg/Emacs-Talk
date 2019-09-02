@@ -1,27 +1,31 @@
-# Created 2019-05-20 Mon 09:59
-#+OPTIONS: toc:nil num:nil email:nil prop:t
-#+TITLE: Living inside GNU Emacs
-#+AUTHOR: aadcg
-#+startup: latexpreview content hideblocks
+# Created 2019-09-02 Mon 16:53
+#+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
+#+TITLE: GNU Emacs and Freedom
+#+AUTHOR: André Alexandre Gomes
+#+EMAIL: andremegafone@gmail.com
+#+startup: latexpreview showall
 #+property: header-args :results raw replace :exports code
 #+export_file_name: slides.org
 
+#+begin_abstract
+TODO
+#+end_abstract
 
 * Hello!
 
 [[file:images/logo.png]]
 
-Welcome to my customized *GNU Emacs*.
+Welcome to (my customized) *GNU Emacs*.
 
-This is a live demo. Enjoy!
+Enjoy!
 
-* What is GNU Emacs?
+* What is it?
 
 [[https://www.gnu.org/software/emacs/index.html][Website]] says:
 
-An extensible, customizable, free/libre text editor — and more.
+(I have a good excuse for the blank space.)
 
-** Let's open it!
+* Let's run it!
 
 (async-shell-command "emacs -q")
 
@@ -31,7 +35,7 @@ The plots thickens. What is *GNU*?
 
 [[file:images/gnu.png]]
 
-** GNU/Linux?
+* GNU/Linux?
 
 I wish everyone could guess what I'm going to say next.
 
@@ -39,7 +43,7 @@ Sadly, that might not be true.
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
-*** Richard Stallman
+* Richard Stallman
 
 [[file:images/stallman.jpeg]]
 
@@ -49,20 +53,20 @@ Sadly, that might not be true.
 
 - founded the *Free Software Foundation*.
 
-*** Free Software
+* Free Software
 
 Free as in *freedom*, not as in free beer.
 
 It gives software users the freedom to:
 
-  1. use
-  2. study
-  3. distribute
-  4. modify
+1. use
+2. study
+3. distribute
+4. modify
 
 This doesn't mean that it is anti-commercial!
 
-*** Linus Torvalds
+* Linus Torvalds
 
 [[file:images/linus.jpeg]]
 
@@ -70,13 +74,13 @@ This doesn't mean that it is anti-commercial!
 
 - created *git* in 2005.
 
-*** Open Source
+* Open Source
 
 A decentralized development model that encourages open collaboration.
 
 It provides better code and faster deployment.
 
-*** Conclusion
+* Conclusion
 
 [[file:images/free_vs_open.png]]     [[file:images/gnu+linux.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
@@ -91,50 +95,32 @@ It provides better code and faster deployment.
 (woman "ls")
 
 * Why a text editor?
-:PROPERTIES:
-:header-args:python: :results output replace
-:END:
 
 - One program to rule them all;
 
 - Free our brain from trivial text handling.
 
-* Mindstorm
-:PROPERTIES:
-:exports:  both
-:END:
+Ex:
 
-=TRAMP is for transparently accessing remote files from within Emacs.=
+(macros w counter)
+(rectangles)
+(sort)
+(upper case)
+(comma macro)
 
-** Going everywhere without ever leaving
+Person1 name1@somewhere.com
+Person2 name2@somewhere.com
+Person3 name1@somewhere.com
+Person4 name2@somewhere.com
+Person5 name1@somewhere.com
 
-I use my local Emacs to edit remote files.
+name1@here.com
+name2@here.com
+name1@here.com
+name2@here.com
+name1@here.com
 
-*** Example 1
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/
-:END:
-
-#+begin_src sh
-  echo 'Hello Mindstorm!'
-  date
-  nproc
-  who
-#+end_src
-
-*** Example 2
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net|ssh:aadco@ac002:~/
-:END:
-
-#+begin_src sh
-  echo 'Hello Mindstorm! Got processors?'
-  date
-  who
-  nproc
-#+end_src
-
-** Dired mode and visiting files
+* Dired mode and visiting files
 
 - [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
 
@@ -142,42 +128,36 @@ I use my local Emacs to edit remote files.
 
 - [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
 
-** Bash commands
+* Bash commands
 
 There are multiple ways. Here's two:
+
+- [ ] (shell-command "some-command")
+  (async-shell-command "some-command")
+
+  equivalent to:
+
+  $ some-command
+  $ some-command &
 
 - [ ] (ansi-term "/bin/bash")
 
   terminal emulator (like GNOME Terminal, tmux, etc)
 
-- [ ] (shell-command "some-command")
-       (async-shell-command "some-command")
-
-       equivalent to:
-
-       $ some-command
-       $ some-command &
-
-* Python
-:PROPERTIES:
-:exports:  both
-:END:
-
-** Basic example
+* Basic example
 :PROPERTIES:
 :header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/demo/hello.py
 :END:
 
 Programmers only write two programs:
-- Hello World
-- Factorials
-
+- Hello World;
+- Factorials.
 
 #+begin_src python
   print('Hello World')
 #+end_src
 
-** Plottting
+* Plottting
 :PROPERTIES:
 :header-args:python: :results file
 :END:
@@ -193,21 +173,6 @@ Programmers only write two programs:
   plt.savefig(path)
   return path
 #+end_src
-
-** Mindstorm
-:PROPERTIES:
-:header-args:sh: :dir /ssh:aadco@login.mindstorm.vestas.net:~/demo/
-:END:
-
-#+begin_src sh
-  pwd
-  module load anaconda/2-5.1.0
-  python hello.py
-#+end_src
-
-** EIN (Emacs IPython Notebook)
-
-(async-shell-command "jupyter notebook --no-browser")
 
 * Magit
 
@@ -228,16 +193,17 @@ Let's have fun!
 
 жизнь
 
-[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15
-][The Cathedral and the Bazaar - Eric Raymond]]
+[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15][The Cathedral and the Bazaar - Eric Raymond]]
 
-** Android
+* Android
 
 Not surprisingly, I run Emacs on my Android phone.
 
 Quite useful since Emacs is my agenda.
 
 (switch-to-buffer "*Org Agenda*")
+
+Screen-stream demo!
 
 * Why Emacs?
 
@@ -258,19 +224,6 @@ Anyway, this is the self documenting text editor!
 
 (help)
 (info)
-
-** Vi(m) users
-
-=Recall that vi vi vi is the editor of the beast.=
-(joke by Richard Stallman.)
-
-If you're used to vi(m) keybindings:
-- try EVIL mode;
-- try Spacemacs.
-
-[[https://www.youtube.com/watch?v=JWD1Fpdd4Pc][Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs]]
-
-[[file:images/vim_emacs.png]]
 
 * Did your brain just explode?
 
