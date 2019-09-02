@@ -1,10 +1,16 @@
 #+TITLE: Living inside GNU Emacs
-#+AUTHOR: aadcg
-#+STARTUP: latexpreview content hideblocks
-#+OPTIONS: toc:nil num:nil email:nil prop:t
+#+STARTUP: latexpreview showall
+#+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+PROPERTY: header-args :results raw replace :exports code
 #+EXPORT_FILE_NAME: slides.org
 
+#+begin_comment
+(org-org-export-to-org)
+#+end_comment
+
+#+BEGIN_abstract
+TODO
+#+END_abstract
 
 * Hello!
 
