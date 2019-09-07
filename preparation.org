@@ -1,7 +1,7 @@
-#+TITLE: GNU Emacs and Freedom
+#+TITLE: GNU Emacs as my platform for freedom
 #+STARTUP: latexpreview showall
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
-#+PROPERTY: header-args :results raw replace :exports code
+#+PROPERTY: header-args :exports code
 #+EXPORT_FILE_NAME: slides.org
 
 #+begin_comment
@@ -9,30 +9,25 @@
 #+end_comment
 
 #+BEGIN_abstract
-TODO
+The world of today talks a lot about productivity and cross platform software. I
+will show what GNU Emacs (and, in particular, org-mode) can offer.
 #+END_abstract
 
 * Hello!
 
 [[file:images/logo.png]]
 
-Welcome to (my customized) *GNU Emacs*.
+Welcome to the world of *GNU Emacs*.
 
 Enjoy!
 
 #+begin_comment
 - Hi! Thanks.
 
-- Setup - VM, Ubuntu
-
-- Difficult talk given that we're miles away from sharing a common background
-  (even amongst emacs user).
+- Experience with Emacs, org-mode?
 
 - Please relate to this talk as if you're at the cinema. Please passively acept
-the fact that you don't understand wtf is going on here.
-
-- Some of the things I will show will be more useful that others. I tried to
-take everyone into account.
+the fact that you don't understand wtf is going on here. This isn't a tutorial.
 
 - You will have tons of questions, let's deal with them in the end.
 
@@ -135,76 +130,69 @@ It provides better code and faster deployment.
 
 (woman "ls")
 
+[[pdfview:/home/shady/NextCloud/Library/The_Cathedral_and_the_Bazaar-Eric_Raymond.pdf::15][The Cathedral and the Bazzar - Eric Raymond]]
+
 #+begin_comment
 - woman stands for without manual
 #+end_comment
 
 * Why a text editor?
 
-- One program to rule them all;
+- One program to rule them all
 
-- Free our brain from trivial text handling.
+- Free our brain from trivial text handling
 
-Ex:
-
+#+begin_comment
+Person
 (macros w counter)
 (rectangles)
 (sort)
 (upper case)
 (comma macro)
-
-Person1 name1@somewhere.com
-Person2 name2@somewhere.com
-Person3 name1@somewhere.com
-Person4 name2@somewhere.com
-Person5 name1@somewhere.com
-
-name1@here.com
-name2@here.com
-name1@here.com
-name2@here.com
-name1@here.com
-
-* Dired mode and visiting files
-
-- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
-
-- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
-
-- [[/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
-
-* Bash commands
-
-There are multiple ways. Here's two:
-
-- [ ] (shell-command "some-command")
-       (async-shell-command "some-command")
-
-       equivalent to:
-
-       $ some-command
-       $ some-command &
-
-- [ ] (ansi-term "/bin/bash")
-
-  terminal emulator (like GNOME Terminal, tmux, etc)
-
-#+begin_comment
-C-u M-!
 #+end_comment
 
-* Basic example
+* Getting around and bash commands
+
+(find-file "/home/shady/Emacs-Talk")
+
+(ansi-term "/bin/bash")
+
+* Writing programs
 :PROPERTIES:
-:header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/demo/hello.py
+:header-args:python: :results output
 :END:
 
 Programmers only write two programs:
-  - Hello World;
-  - Factorials.
+  - Hello World
+  - Factorial
 
 #+begin_src python
-  print('Hello World')
+  print('Hello Porto Codes!')
 #+end_src
+
+#+RESULTS:
+: Hello World
+
+#+begin_src go
+  package main
+
+  import "fmt"
+
+  func main() {
+          fmt.Println("Hello Porto Codes")
+  }
+#+end_src
+
+#+RESULTS:
+: Hello Porto Codes
+
+It's *Org Mode* and its *literate programming* capabilities.
+
+
+Let us change our traditional attitude to the construction of programs. Instead
+of imagining that our main task is to instruct a computer what to do, let us
+concentrate rather on explaining to human beings what we want a computer to do.
+- Donald Knuth
 
 * Plottting
 :PROPERTIES:
@@ -215,20 +203,23 @@ Programmers only write two programs:
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i for i in range(50)]
+  y = [i**2 for i in range(50)]
 
   plt.plot(x, y, 'o')
-  path = './demo.png'
+  path = './plot.png'
   plt.savefig(path)
   return path
 #+end_src
 
-* Magit
+#+RESULTS:
+[[file:./demo.png]]
+
+* Version Control
 
 =Magit is an interface to the version control system Git, implemented as an
 Emacs package.= (from [[https://magit.vc/][here]])
 
-It can actually be faster than using the command line!
+Way better than using the command line.
 
 #+begin_comment
 ACTION: commit current changes! and then revert.
@@ -236,34 +227,23 @@ ACTION: commit current changes! and then revert.
 
 * Miscellaneous
 
-Let's have fun!
-
 (snake)
-
-(doctor)
 
 (calendar)
 
 жизнь
 
-[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15][The Cathedral and the Bazaar - Eric Raymond]]
+* Speaking of life...
 
-#+begin_comment
-I am the psychotherapist.  Please, describe your problems.  Each time you are
-finished talking, type RET twice.
+...GNU Emacs manages my life. It's my 2nd brain.
 
-Well, people don't get Emacs... They say it's complicated
+* Cross Platform
 
-Emacs?  Hah!  I would appreciate it if you would continue.
+I usually have 3 devices:
 
-I simply love Emacs...
-
-Are you sure?
-
-Oh yes!
-#+end_comment
-
-* Android
+- personal laptop
+- work laptop (Windows + VirtualBox + GNU/Linux)
+- android phone
 
 Not surprisingly, I run Emacs on my Android phone.
 
@@ -273,57 +253,18 @@ Quite useful since Emacs is my agenda.
 
 Screen-stream demo!
 
-* COMMENT Cross platform
+* Android demo
 
-=Emacs runs on several operating systems regardless of the machine type. The
-main ones are: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, MacOS, MS Windows and
-Solaris.=
+(browse-url-firefox "https://192.168.1.73:8080/")
 
-=We include support for some proprietary systems in GNU Emacs in the hope that
-running Emacs on them will give users a taste of freedom and thus lead them to
-free themselves.=
-(Quoted from [[https://www.gnu.org/software/emacs/download.html#gnu-linux][here]].)
+* So... Why Emacs?
 
-* Why Emacs?
+*YOU* define the way you do your computing.
 
-YOU define the way you do your computing.
-
-Its devoted community is what makes it special.
+Its community has ethics and expertise.
 
 [[file:images/enslaved_users.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
-
-* Getting help
-
-Feel free to approach me anytime.
-
-I will tailor my help to your needs.
-
-Anyway, this is the self documenting text editor!
-
-(help)
-(info)
-
-#+begin_comment
-- there are lots of resources out there. I happen to know them quite well.
-
-- I'd be happy to advice any of you by understading your needs and tailor the
-solution given those needs.
-#+end_comment
-
-* Did your brain just explode?
-
-Then I did my job well!
-
-No, I'm not magician! It's way simpler than you think.
-
-It's *Org Mode* and its *literate programming* capabilities.
-
-
-Let us change our traditional attitude to the construction of programs. Instead
-of imagining that our main task is to instruct a computer what to do, let us
-concentrate rather on explaining to human beings what we want a computer to do.
-- Donald Knuth
 
 * Questions & Answers
 
@@ -332,3 +273,5 @@ Thank you.
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
 
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
+
+Licensed under the GNU Free Documentation License (copyleft).

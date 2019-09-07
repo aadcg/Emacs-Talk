@@ -1,21 +1,22 @@
-# Created 2019-09-02 Mon 16:53
+# Created 2019-09-07 Sat 17:23
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
-#+TITLE: GNU Emacs and Freedom
+#+TITLE: GNU Emacs as my platform for freedom
 #+AUTHOR: André Alexandre Gomes
 #+EMAIL: andremegafone@gmail.com
 #+startup: latexpreview showall
-#+property: header-args :results raw replace :exports code
+#+property: header-args :exports code
 #+export_file_name: slides.org
 
 #+begin_abstract
-TODO
+The world of today talks a lot about productivity and cross platform software. I
+will show what GNU Emacs (and, in particular, org-mode) can offer.
 #+end_abstract
 
 * Hello!
 
 [[file:images/logo.png]]
 
-Welcome to (my customized) *GNU Emacs*.
+Welcome to the world of *GNU Emacs*.
 
 Enjoy!
 
@@ -94,68 +95,50 @@ It provides better code and faster deployment.
 
 (woman "ls")
 
+[[pdfview:/home/shady/NextCloud/Library/The_Cathedral_and_the_Bazaar-Eric_Raymond.pdf::15][The Cathedral and the Bazzar - Eric Raymond]]
+
 * Why a text editor?
 
-- One program to rule them all;
+- One program to rule them all
 
-- Free our brain from trivial text handling.
+- Free our brain from trivial text handling
 
-Ex:
+* Getting around and bash commands
 
-(macros w counter)
-(rectangles)
-(sort)
-(upper case)
-(comma macro)
+(find-file "/home/shady/Emacs-Talk")
 
-Person1 name1@somewhere.com
-Person2 name2@somewhere.com
-Person3 name1@somewhere.com
-Person4 name2@somewhere.com
-Person5 name1@somewhere.com
+(ansi-term "/bin/bash")
 
-name1@here.com
-name2@here.com
-name1@here.com
-name2@here.com
-name1@here.com
-
-* Dired mode and visiting files
-
-- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/dm/cfd/app/PSE2/benchmark.v2/0410f736-9499-43aa-b974-baa1f0151621/ac_inputs.json][json file]]
-
-- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/pse2_venv_prod.yml][yml file]]
-
-- [[file:/ssh:aadco@login.mindstorm.vestas.net:/ifs/home/aadco/][my home folder]]
-
-* Bash commands
-
-There are multiple ways. Here's two:
-
-- [ ] (shell-command "some-command")
-  (async-shell-command "some-command")
-
-  equivalent to:
-
-  $ some-command
-  $ some-command &
-
-- [ ] (ansi-term "/bin/bash")
-
-  terminal emulator (like GNOME Terminal, tmux, etc)
-
-* Basic example
+* Writing programs
 :PROPERTIES:
-:header-args:python: :results output :tangle /ssh:aadco@login.mindstorm.vestas.net:~/demo/hello.py
+:header-args:python: :results output
 :END:
 
 Programmers only write two programs:
-- Hello World;
-- Factorials.
+- Hello World
+- Factorial
 
 #+begin_src python
-  print('Hello World')
+  print('Hello Porto Codes!')
 #+end_src
+
+#+begin_src go
+  package main
+
+  import "fmt"
+
+  func main() {
+          fmt.Println("Hello Porto Codes")
+  }
+#+end_src
+
+It's *Org Mode* and its *literate programming* capabilities.
+
+
+Let us change our traditional attitude to the construction of programs. Instead
+of imagining that our main task is to instruct a computer what to do, let us
+concentrate rather on explaining to human beings what we want a computer to do.
+- Donald Knuth
 
 * Plottting
 :PROPERTIES:
@@ -166,36 +149,40 @@ Programmers only write two programs:
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i for i in range(50)]
+  y = [i**2 for i in range(50)]
 
   plt.plot(x, y, 'o')
-  path = './demo.png'
+  path = './plot.png'
   plt.savefig(path)
   return path
 #+end_src
 
-* Magit
+* Version Control
 
 =Magit is an interface to the version control system Git, implemented as an
 Emacs package.= (from [[https://magit.vc/][here]])
 
-It can actually be faster than using the command line!
+Way better than using the command line.
 
 * Miscellaneous
 
-Let's have fun!
-
 (snake)
-
-(doctor)
 
 (calendar)
 
 жизнь
 
-[[pdfview:~/NextCloud/The_Cathedral_and_the_Bazaar-Eric_Raymond::15][The Cathedral and the Bazaar - Eric Raymond]]
+* Speaking of life...
 
-* Android
+...GNU Emacs manages my life. It's my 2nd brain.
+
+* Cross Platform
+
+I usually have 3 devices:
+
+- personal laptop
+- work laptop (Windows + VirtualBox + GNU/Linux)
+- android phone
 
 Not surprisingly, I run Emacs on my Android phone.
 
@@ -205,7 +192,11 @@ Quite useful since Emacs is my agenda.
 
 Screen-stream demo!
 
-* Why Emacs?
+* Android demo
+
+(browse-url-firefox "https://192.168.1.73:8080/")
+
+* Take home
 
 YOU define the way you do your computing.
 
@@ -214,31 +205,6 @@ Its devoted community is what makes it special.
 [[file:images/enslaved_users.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
-* Getting help
-
-Feel free to approach me anytime.
-
-I will tailor my help to your needs.
-
-Anyway, this is the self documenting text editor!
-
-(help)
-(info)
-
-* Did your brain just explode?
-
-Then I did my job well!
-
-No, I'm not magician! It's way simpler than you think.
-
-It's *Org Mode* and its *literate programming* capabilities.
-
-
-Let us change our traditional attitude to the construction of programs. Instead
-of imagining that our main task is to instruct a computer what to do, let us
-concentrate rather on explaining to human beings what we want a computer to do.
-- Donald Knuth
-
 * Questions & Answers
 
 Thank you.
@@ -246,3 +212,5 @@ Thank you.
 Please find my config files at [[https://github.com/aadcg/.emacs.d][https://github.com/aadcg/.emacs.d]].
 
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
+
+Licensed under the GNU Free Documentation License (copyleft).
