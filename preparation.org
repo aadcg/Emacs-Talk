@@ -1,4 +1,4 @@
-#+TITLE: GNU Emacs as my platform for freedom
+#+TITLE: GNU Emacs - experiencing freedom
 #+STARTUP: latexpreview showall
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+PROPERTY: header-args :exports code
@@ -9,8 +9,18 @@
 #+end_comment
 
 #+BEGIN_abstract
-The world of today talks a lot about productivity and cross platform software. I
-will show what GNU Emacs (and, in particular, org-mode) can offer.
+Today's technological world is both exciting and alarming.
+
+Exciting because we have the tools to solve the challenging problems of our
+overpopulated planet. The vision of a connected, peaceful and fair world feels
+closer than ever.
+
+Alarming because tech companies offer tons of malware that people greet without
+questioning - exchanging their freedom for a fake sense of pleasure and a fake
+sense of productivity.
+
+In this talk, I will show that GNU Emacs is the perfect environment for a
+focused and free life in a world full of corrupted people and bullshit.
 #+END_abstract
 
 * Hello!
@@ -21,18 +31,14 @@ Welcome to the world of *GNU Emacs*.
 
 Enjoy!
 
-#+begin_comment
+** COMMENT
 - Hi! Thanks.
-
 - Experience with Emacs, org-mode?
-
 - Please relate to this talk as if you're at the cinema. Please passively acept
-the fact that you don't understand wtf is going on here. This isn't a tutorial.
-
+  the fact that you don't understand wtf is going on here. This isn't a
+  tutorial.
 - You will have tons of questions, let's deal with them in the end.
-
 - Focus on the WHAT, not on the HOW.
-#+end_comment
 
 * What is it?
 
@@ -53,6 +59,8 @@ stack overflow.
 - Let's assume you have downloaded it and let's run it!
 #+end_comment
 
+** COMMENT
+
 * Let's run it!
 
 (async-shell-command "emacs -q")
@@ -62,6 +70,8 @@ stack overflow.
 The plots thickens. What is *GNU*?
 
 [[file:images/gnu.png]]
+
+** COMMENT
 
 * GNU/Linux?
 
@@ -79,6 +89,8 @@ Sadly, that might not be true.
 - we need a short historical context
 #+end_comment
 
+** COMMENT
+
 * Richard Stallman
 
 [[file:images/stallman.jpeg]]
@@ -88,6 +100,8 @@ Sadly, that might not be true.
 - developed *GNU Emacs* in 1985;
 
 - founded the *Free Software Foundation*.
+
+** COMMENT
 
 * Free Software
 
@@ -102,6 +116,8 @@ It gives software users the freedom to:
 
 This doesn't mean that it is anti-commercial!
 
+** COMMENT
+
 * Linus Torvalds
 
 [[file:images/linus.jpeg]]
@@ -115,6 +131,8 @@ This doesn't mean that it is anti-commercial!
 A decentralized development model that encourages open collaboration.
 
 It provides better code and faster deployment.
+
+** COMMENT
 
 * Conclusion
 
@@ -136,6 +154,8 @@ It provides better code and faster deployment.
 - woman stands for without manual
 #+end_comment
 
+** COMMENT
+
 * Why a text editor?
 
 - One program to rule them all
@@ -151,11 +171,15 @@ Person
 (comma macro)
 #+end_comment
 
+** COMMENT
+
 * Getting around and bash commands
 
 (find-file "/home/shady/Emacs-Talk")
 
 (ansi-term "/bin/bash")
+
+** COMMENT
 
 * Writing programs
 :PROPERTIES:
@@ -194,6 +218,8 @@ of imagining that our main task is to instruct a computer what to do, let us
 concentrate rather on explaining to human beings what we want a computer to do.
 - Donald Knuth
 
+** COMMENT
+
 * Plottting
 :PROPERTIES:
 :header-args:python: :results file
@@ -214,6 +240,8 @@ concentrate rather on explaining to human beings what we want a computer to do.
 #+RESULTS:
 [[file:./demo.png]]
 
+** COMMENT
+
 * Version Control
 
 =Magit is an interface to the version control system Git, implemented as an
@@ -225,6 +253,8 @@ Way better than using the command line.
 ACTION: commit current changes! and then revert.
 #+end_comment
 
+** COMMENT
+
 * Miscellaneous
 
 (snake)
@@ -233,9 +263,13 @@ ACTION: commit current changes! and then revert.
 
 жизнь
 
+** COMMENT
+
 * Speaking of life...
 
 ...GNU Emacs manages my life. It's my 2nd brain.
+
+** COMMENT
 
 * Cross Platform
 
@@ -253,18 +287,24 @@ Quite useful since Emacs is my agenda.
 
 Screen-stream demo!
 
+** COMMENT
+
 * Android demo
 
 (browse-url-firefox "https://192.168.1.73:8080/")
+
+** COMMENT
 
 * So... Why Emacs?
 
 *YOU* define the way you do your computing.
 
-Its community has ethics and expertise.
+And the community is knowledgable and ethical.
 
-[[file:images/enslaved_users.png]]
+p[[file:images/enslaved_users.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
+
+** COMMENT
 
 * Questions & Answers
 
@@ -275,3 +315,5 @@ Please find my config files at [[https://github.com/aadcg/.emacs.d][https://gith
 Please find these slides at [[https://github.com/aadcg/Emacs-Talk][https://github.com/aadcg/Emacs-Talk]].
 
 Licensed under the GNU Free Documentation License (copyleft).
+
+** COMMENT

@@ -1,6 +1,6 @@
-# Created 2019-09-07 Sat 17:23
+# Created 2019-09-09 Mon 12:56
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
-#+TITLE: GNU Emacs as my platform for freedom
+#+TITLE: GNU Emacs - experiencing freedom
 #+AUTHOR: André Alexandre Gomes
 #+EMAIL: andremegafone@gmail.com
 #+startup: latexpreview showall
@@ -8,8 +8,18 @@
 #+export_file_name: slides.org
 
 #+begin_abstract
-The world of today talks a lot about productivity and cross platform software. I
-will show what GNU Emacs (and, in particular, org-mode) can offer.
+Today's technological world is both exciting and alarming.
+
+Exciting because we have the tools to solve the challenging problems of our
+overpopulated planet. The vision of a connected, peaceful and fair world feels
+closer than ever.
+
+Alarming because tech companies offer tons of malware that people greet without
+questioning - exchanging their freedom for a fake sense of pleasure and a fake
+sense of productivity.
+
+In this talk, I will show that GNU Emacs is the perfect environment for a
+focused and free life in a world full of corrupted people and bullshit.
 #+end_abstract
 
 * Hello!
@@ -196,13 +206,13 @@ Screen-stream demo!
 
 (browse-url-firefox "https://192.168.1.73:8080/")
 
-* Take home
+* So... Why Emacs?
 
-YOU define the way you do your computing.
+*YOU* define the way you do your computing.
 
-Its devoted community is what makes it special.
+And the community is knowledgable and ethical.
 
-[[file:images/enslaved_users.png]]
+p[[file:images/enslaved_users.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
 * Questions & Answers
