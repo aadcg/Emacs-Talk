@@ -46,7 +46,7 @@ Enjoy!
 
 (I have a good excuse for the blank space.)
 
-#+begin_comment
+** COMMENT
 - A browser is indispensable nowadays. We write code by copying&pasting it from
 stack overflow.
 
@@ -57,9 +57,6 @@ stack overflow.
 - paste a sentence
 
 - Let's assume you have downloaded it and let's run it!
-#+end_comment
-
-** COMMENT
 
 * Let's run it!
 
@@ -81,15 +78,13 @@ Sadly, that might not be true.
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
-#+begin_comment
+** COMMENT
+
 - the above picture sums up everything I will be telling for the next 5 minutes
 
 - who are these people? anyone?
 
 - we need a short historical context
-#+end_comment
-
-** COMMENT
 
 * Richard Stallman
 
@@ -150,11 +145,9 @@ It provides better code and faster deployment.
 
 [[pdfview:/home/shady/NextCloud/Library/The_Cathedral_and_the_Bazaar-Eric_Raymond.pdf::15][The Cathedral and the Bazzar - Eric Raymond]]
 
-#+begin_comment
-- woman stands for without manual
-#+end_comment
-
 ** COMMENT
+
+- woman stands for without manual
 
 * Why a text editor?
 
@@ -162,16 +155,13 @@ It provides better code and faster deployment.
 
 - Free our brain from trivial text handling
 
-#+begin_comment
+** COMMENT
 Person
 (macros w counter)
 (rectangles)
 (sort)
 (upper case)
 (comma macro)
-#+end_comment
-
-** COMMENT
 
 * Getting around and bash commands
 
@@ -249,11 +239,10 @@ Emacs package.= (from [[https://magit.vc/][here]])
 
 Way better than using the command line.
 
-#+begin_comment
-ACTION: commit current changes! and then revert.
-#+end_comment
-
 ** COMMENT
+
+ACTION: commit current changes! and then revert.
+
 
 * Miscellaneous
 
