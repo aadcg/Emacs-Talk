@@ -34,11 +34,7 @@ Enjoy!
 ** COMMENT
 - Hi! Thanks.
 - Experience with Emacs, org-mode?
-- Please relate to this talk as if you're at the cinema. Please passively acept
-  the fact that you don't understand wtf is going on here. This isn't a
-  tutorial.
-- You will have tons of questions, let's deal with them in the end.
-- Focus on the WHAT, not on the HOW.
+- This isn't a tutorial. Focus on the WHAT, not on the HOW.
 
 * What is it?
 
@@ -47,14 +43,14 @@ Enjoy!
 (I have a good excuse for the blank space.)
 
 ** COMMENT
-- A browser is indispensable nowadays. We write code by copying&pasting it from
-stack overflow.
-
+- Eww: no javascript but displays images
+- Browser in my text editor means that I can quickly copy and paste from
+  websites (e.g. from stack overflow)
 - I can access it without leaving my text editor.
 
-- Open link
-
-- paste a sentence
+DEMO:
+- open link
+- paste sentence
 
 - Let's assume you have downloaded it and let's run it!
 
@@ -69,6 +65,11 @@ The plots thickens. What is *GNU*?
 [[file:images/gnu.png]]
 
 ** COMMENT
+
+- want to learn Emacs? read the tutorial
+
+DEMO:
+run sexp
 
 * GNU/Linux?
 
@@ -243,7 +244,6 @@ Way better than using the command line.
 
 ACTION: commit current changes! and then revert.
 
-
 * Miscellaneous
 
 (snake)
@@ -290,7 +290,7 @@ Screen-stream demo!
 
 And the community is knowledgable and ethical.
 
-p[[file:images/enslaved_users.png]]
+[[file:images/enslaved_users.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
 ** COMMENT

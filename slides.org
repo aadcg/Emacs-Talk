@@ -1,4 +1,4 @@
-# Created 2019-09-09 Mon 12:56
+# Created 2019-09-10 Tue 18:21
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+TITLE: GNU Emacs - experiencing freedom
 #+AUTHOR: André Alexandre Gomes
@@ -212,7 +212,7 @@ Screen-stream demo!
 
 And the community is knowledgable and ethical.
 
-p[[file:images/enslaved_users.png]]
+[[file:images/enslaved_users.png]]
 /Taken from [[https://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society/][this talk]] by Richard Stallman./
 
 * Questions & Answers
