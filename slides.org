@@ -1,4 +1,4 @@
-# Created 2019-09-10 Tue 18:21
+# Created 2019-09-11 Wed 15:52
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+TITLE: GNU Emacs - experiencing freedom
 #+AUTHOR: André Alexandre Gomes
@@ -30,7 +30,9 @@ Welcome to the world of *GNU Emacs*.
 
 Enjoy!
 
-* What is it?
+(view-hello-file)
+
+* What is GNU Emacs?
 
 [[https://www.gnu.org/software/emacs/index.html][Website]] says:
 
@@ -50,7 +52,7 @@ The plots thickens. What is *GNU*?
 
 I wish everyone could guess what I'm going to say next.
 
-Sadly, that might not be true.
+Sadly, that might not be the case.
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
@@ -109,11 +111,11 @@ It provides better code and faster deployment.
 
 * Why a text editor?
 
-- One program to rule them all
+- One program to rule them all;
 
-- Free our brain from trivial text handling
+- Free our brain from trivial text handling.
 
-* Getting around and bash commands
+* Getting around and shell commands
 
 (find-file "/home/shady/Emacs-Talk")
 
@@ -142,8 +144,9 @@ Programmers only write two programs:
   }
 #+end_src
 
-It's *Org Mode* and its *literate programming* capabilities.
+* ...a text file that is able to run code in most programming languages?
 
+It's *Org Mode* and its *literate programming* capabilities.
 
 Let us change our traditional attitude to the construction of programs. Instead
 of imagining that our main task is to instruct a computer what to do, let us
@@ -159,7 +162,7 @@ concentrate rather on explaining to human beings what we want a computer to do.
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i**2 for i in range(50)]
+  y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
   path = './plot.png'
@@ -184,7 +187,9 @@ Way better than using the command line.
 
 * Speaking of life...
 
-...GNU Emacs manages my life. It's my 2nd brain.
+...GNU Emacs manages my life!
+
+(switch-to-agenda)
 
 * Cross Platform
 
@@ -198,13 +203,11 @@ Not surprisingly, I run Emacs on my Android phone.
 
 Quite useful since Emacs is my agenda.
 
-(switch-to-buffer "*Org Agenda*")
-
 Screen-stream demo!
 
 * Android demo
 
-(browse-url-firefox "https://192.168.1.73:8080/")
+(browse-url-firefox "http://192.168.1.65:8080/")
 
 * So... Why Emacs?
 

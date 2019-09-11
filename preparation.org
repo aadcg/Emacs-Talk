@@ -31,12 +31,14 @@ Welcome to the world of *GNU Emacs*.
 
 Enjoy!
 
+(view-hello-file)
+
 ** COMMENT
 - Hi! Thanks.
 - Experience with Emacs, org-mode?
 - This isn't a tutorial. Focus on the WHAT, not on the HOW.
 
-* What is it?
+* What is GNU Emacs?
 
 [[https://www.gnu.org/software/emacs/index.html][Website]] says:
 
@@ -65,8 +67,7 @@ The plots thickens. What is *GNU*?
 [[file:images/gnu.png]]
 
 ** COMMENT
-
-- want to learn Emacs? read the tutorial
+- read the tutorial
 
 DEMO:
 run sexp
@@ -75,17 +76,13 @@ run sexp
 
 I wish everyone could guess what I'm going to say next.
 
-Sadly, that might not be true.
+Sadly, that might not be the case.
 
 [[file:images/linus-torvalds-vs-richard-stallman.jpeg]]
 
 ** COMMENT
-
-- the above picture sums up everything I will be telling for the next 5 minutes
-
-- who are these people? anyone?
-
-- we need a short historical context
+- the above picture sums up everything I will be telling
+- who are these people?
 
 * Richard Stallman
 
@@ -147,14 +144,13 @@ It provides better code and faster deployment.
 [[pdfview:/home/shady/NextCloud/Library/The_Cathedral_and_the_Bazaar-Eric_Raymond.pdf::15][The Cathedral and the Bazzar - Eric Raymond]]
 
 ** COMMENT
-
 - woman stands for without manual
 
 * Why a text editor?
 
-- One program to rule them all
+- One program to rule them all;
 
-- Free our brain from trivial text handling
+- Free our brain from trivial text handling.
 
 ** COMMENT
 Person
@@ -164,7 +160,7 @@ Person
 (upper case)
 (comma macro)
 
-* Getting around and bash commands
+* Getting around and shell commands
 
 (find-file "/home/shady/Emacs-Talk")
 
@@ -185,9 +181,6 @@ Programmers only write two programs:
   print('Hello Porto Codes!')
 #+end_src
 
-#+RESULTS:
-: Hello World
-
 #+begin_src go
   package main
 
@@ -198,18 +191,16 @@ Programmers only write two programs:
   }
 #+end_src
 
-#+RESULTS:
-: Hello Porto Codes
+** COMMENT
+
+* ...a text file that is able to run code in most programming languages?
 
 It's *Org Mode* and its *literate programming* capabilities.
-
 
 Let us change our traditional attitude to the construction of programs. Instead
 of imagining that our main task is to instruct a computer what to do, let us
 concentrate rather on explaining to human beings what we want a computer to do.
 - Donald Knuth
-
-** COMMENT
 
 * Plottting
 :PROPERTIES:
@@ -220,7 +211,7 @@ concentrate rather on explaining to human beings what we want a computer to do.
   import matplotlib.pyplot as plt
 
   x = [i for i in range(50)]
-  y = [i**2 for i in range(50)]
+  y = [i for i in range(50)]
 
   plt.plot(x, y, 'o')
   path = './plot.png'
@@ -229,7 +220,7 @@ concentrate rather on explaining to human beings what we want a computer to do.
 #+end_src
 
 #+RESULTS:
-[[file:./demo.png]]
+[[file:./plot.png]]
 
 ** COMMENT
 
@@ -256,7 +247,9 @@ ACTION: commit current changes! and then revert.
 
 * Speaking of life...
 
-...GNU Emacs manages my life. It's my 2nd brain.
+...GNU Emacs manages my life!
+
+(switch-to-agenda)
 
 ** COMMENT
 
@@ -272,15 +265,13 @@ Not surprisingly, I run Emacs on my Android phone.
 
 Quite useful since Emacs is my agenda.
 
-(switch-to-buffer "*Org Agenda*")
-
 Screen-stream demo!
 
 ** COMMENT
 
 * Android demo
 
-(browse-url-firefox "https://192.168.1.73:8080/")
+(browse-url-firefox "http://192.168.1.65:8080/")
 
 ** COMMENT
 
