@@ -160,7 +160,7 @@ Person
 (upper case)
 (comma macro)
 
-* Getting around and shell commands
+* COMMENT Getting around and shell commands
 
 (find-file "/home/shady/Emacs-Talk")
 
@@ -168,7 +168,7 @@ Person
 
 ** COMMENT
 
-* Writing programs
+* COMMENT Writing programs
 :PROPERTIES:
 :header-args:python: :results output
 :END:
@@ -193,7 +193,7 @@ Programmers only write two programs:
 
 ** COMMENT
 
-* ...a text file that is able to run code in most programming languages?
+* COMMENT ...a text file that is able to run code in most programming languages?
 
 It's *Org Mode* and its *literate programming* capabilities.
 
@@ -202,7 +202,7 @@ of imagining that our main task is to instruct a computer what to do, let us
 concentrate rather on explaining to human beings what we want a computer to do.
 - Donald Knuth
 
-* Plottting
+* COMMENT Plottting
 :PROPERTIES:
 :header-args:python: :results file
 :END:
@@ -224,7 +224,7 @@ concentrate rather on explaining to human beings what we want a computer to do.
 
 ** COMMENT
 
-* Version Control
+* Version Control (git)
 
 =Magit is an interface to the version control system Git, implemented as an
 Emacs package.= (from [[https://magit.vc/][here]])
@@ -237,7 +237,7 @@ ACTION: commit current changes! and then revert.
 
 * Miscellaneous
 
-(snake)
+(tetris)
 
 (calendar)
 
@@ -247,7 +247,7 @@ ACTION: commit current changes! and then revert.
 
 * Speaking of life...
 
-...GNU Emacs manages my life!
+...GNU Emacs manages my life! It's my agenda!
 
 (switch-to-agenda)
 
@@ -262,10 +262,6 @@ I usually have 3 devices:
 - android phone
 
 Not surprisingly, I run Emacs on my Android phone.
-
-Quite useful since Emacs is my agenda.
-
-Screen-stream demo!
 
 ** COMMENT
 

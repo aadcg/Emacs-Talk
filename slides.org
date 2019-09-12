@@ -1,4 +1,4 @@
-# Created 2019-09-11 Wed 15:55
+# Created 2019-09-12 Thu 14:35
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+TITLE: GNU Emacs - experiencing freedom
 #+AUTHOR: André Alexandre Gomes
@@ -115,62 +115,7 @@ It provides better code and faster deployment.
 
 - Free our brain from trivial text handling.
 
-* Getting around and shell commands
-
-(find-file "/home/shady/Emacs-Talk")
-
-(ansi-term "/bin/bash")
-
-* Writing programs
-:PROPERTIES:
-:header-args:python: :results output
-:END:
-
-Programmers only write two programs:
-- Hello World
-- Factorial
-
-#+begin_src python
-  print('Hello Porto Codes!')
-#+end_src
-
-#+begin_src go
-  package main
-
-  import "fmt"
-
-  func main() {
-          fmt.Println("Hello Porto Codes")
-  }
-#+end_src
-
-* ...a text file that is able to run code in most programming languages?
-
-It's *Org Mode* and its *literate programming* capabilities.
-
-Let us change our traditional attitude to the construction of programs. Instead
-of imagining that our main task is to instruct a computer what to do, let us
-concentrate rather on explaining to human beings what we want a computer to do.
-- Donald Knuth
-
-* Plottting
-:PROPERTIES:
-:header-args:python: :results file
-:END:
-
-#+begin_src python
-  import matplotlib.pyplot as plt
-
-  x = [i for i in range(50)]
-  y = [i for i in range(50)]
-
-  plt.plot(x, y, 'o')
-  path = './plot.png'
-  plt.savefig(path)
-  return path
-#+end_src
-
-* Version Control
+* Version Control (git)
 
 =Magit is an interface to the version control system Git, implemented as an
 Emacs package.= (from [[https://magit.vc/][here]])
@@ -179,7 +124,7 @@ Way better than using the command line.
 
 * Miscellaneous
 
-(snake)
+(tetris)
 
 (calendar)
 
@@ -187,7 +132,7 @@ Way better than using the command line.
 
 * Speaking of life...
 
-...GNU Emacs manages my life!
+...GNU Emacs manages my life! It's my agenda!
 
 (switch-to-agenda)
 
@@ -200,10 +145,6 @@ I usually have 3 devices:
 - android phone
 
 Not surprisingly, I run Emacs on my Android phone.
-
-Quite useful since Emacs is my agenda.
-
-Screen-stream demo!
 
 * Android demo
 
