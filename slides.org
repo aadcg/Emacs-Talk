@@ -1,4 +1,4 @@
-# Created 2019-09-12 Thu 14:35
+# Created 2019-09-12 Thu 17:29
 #+OPTIONS: author:t email:t toc:nil num:nil prop:t ^:nil
 #+TITLE: GNU Emacs - experiencing freedom
 #+AUTHOR: André Alexandre Gomes
